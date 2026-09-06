@@ -1,1 +1,249 @@
+hi this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~
+$ cd "C:\Users\LENOVO\Desktop\gitts"
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git config -- global user.email "aniladitya11d@gmail.com"
+error: key does not contain a section: global
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git config --global user.email "aniladitya11d@gmail.com"
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git config --global user.name "anil12345-by"
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ touch mz.txt
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ echo <<"jdhvsjb" <<mz.txt
+> ^C
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ echo "sgasv" >mz.txt
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ cat
+
+[1]+  Stopped                    cat
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ cat mz.txt
+sgasv
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git add .
+warning: in the working copy of 'mz.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git remote add origin "https://github.com/anil12345-by/mt"
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git branch feature
+fatal: not a valid object name: 'master'
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git switch main
+fatal: invalid reference: main
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git branch
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ ^[[200~git commit -m "Added login feature"
+bash: $'\E[200~git': command not found
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git commit -m "added feature"
+[master (root-commit) b806243] added feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mz.txt
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git branch
+* master
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git branch feature
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git branch
+  feature
+* master
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git switch feature
+Switched to branch 'feature'
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (feature)
+$ git switch master
+Switched to branch 'master'
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git push -u origin master
+        Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 43.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/anil12345-by/mt
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git pull
+Already up to date.
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git fetch
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ git clone "https://github.com/anil12345-by/git-practice"
+Cloning into 'git-practice'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 1), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (1/1), done.
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ cat mv.txt
+cat: mv.txt: No such file or directory
+
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$ cat mz.txt
+sgasv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git --version
+git config --global user.name
+git config --global user.email
+cd
+cd ..
+git init
+git status
+touch
+echo
+git add
+git add .
+git commit -m
+git log
+git log --oneline
+git show
+git remote add origin
+git remote -v
+git remote set-url origin
+git remote remove origin
+git push
+git push -u origin main
+git push -u origin
+git fetch
+git pull
+git pull origin main
+git clone
+git branch
+git branch
+git switch
+git switch -c
+git branch -d
+git merge
+git diff
+git diff --staged
+git revert
+git reset --hard HEAD~1
+git fork
+Pull Request
+LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
+$
 
