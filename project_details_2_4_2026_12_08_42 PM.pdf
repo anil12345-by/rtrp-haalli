@@ -1,0 +1,6462 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5929
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0 g
+10. 816.8899999999999864 Td
+(Project 1: AI for acne detection and classification) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000453792 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000453792 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(AI for acne detection and classification) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000453792 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Derma) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000453792 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Dermatology is the branch of medicine concerned with diagnosis and treatment of skin disorders. AI) Tj
+T* (has the potential to improve dermatologic care, especially in undeserved communities. AI is valuable) Tj
+T* (in analazying skin images and patient information, enabling faster diagnosis and the more accurate) Tj
+T* (identification of skin lesions. Challenges remain in implementation, safety, ethical issues and) Tj
+T* (trustworthiness. Blackheads, Whiteheads, Papules, Pustules, and Cysts are the 5 major types of acne) Tj
+T* (world-wide. The problem is to accurately detect and classify acne using images of patients.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 641.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 628.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 641.8899999999999864 459.9800000000453792 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 628.3899999999999864 Td
+(Gen AI, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 608.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 595.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 608.8899999999999864 459.9800000000453792 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 595.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 450.8899999999999864 Td
+(Project 2: AI for cosmetic dermatology viz face beautification) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 430.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 417.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 430.8899999999999864 459.9800000000363411 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 417.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 409.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 395.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 409.3899999999999864 459.9800000000363411 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 395.8899999999999864 Td
+(AI for cosmetic dermatology viz face beautification) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 376.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 362.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 376.3899999999999864 459.9800000000363411 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 362.8899999999999864 Td
+(Derma) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 354.8899999999999864 55.3000000000000043 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 341.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 354.8899999999999864 459.9800000000363411 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 341.3899999999999864 Td
+(Dermatology is the branch of medicine concerned with diagnosis and treatment of skin disorders. AI) Tj
+T* (has the potential to improve dermatologic care, especially in undeserved communities. AI is valuable) Tj
+T* (in analazying skin images and patient information, enabling faster diagnosis and the more accurate) Tj
+T* (identification of skin lesions. Challenges remain in implementation, safety, ethical issues and) Tj
+T* (trustworthiness. Beautify faces based on cosmetic understanfing using image to image translation.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 287.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 273.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 287.3899999999999864 459.9800000000363411 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 273.8899999999999864 Td
+(AI, Python, GANs) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 254.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 240.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 254.3899999999999864 459.9800000000363411 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 240.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 5250
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 3: Cyber Threat Intel \(CTI\) Chatbot using RAG) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000406612 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000406612 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Cyber Threat Intel \(CTI\) Chatbot using RAG) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000406612 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000406612 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Security analysts drown in unstructured threat reports \(PDFs, blogs\). They need a system to answer) Tj
+T* (questions like "What are the latest IOCs for APT29?" instantly based on internal documents.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 687.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 674.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 687.8899999999999864 459.9800000000406612 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 674.3899999999999864 Td
+(Python, LangChain, OpenAI GPT-4 or Llama 3 \(local\), FAISS \(Vector DB\), Streamlit.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 654.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 641.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 654.8899999999999864 459.9800000000406612 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 641.3899999999999864 Td
+(2) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 496.8899999999999864 Td
+(Project 4: Deepfake Detection using Vision Transformers) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 476.8899999999999864 55.5258620689655729 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 463.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.52586206896558 476.8899999999999864 459.7541379310343928 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.52586206896558 463.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 455.3899999999999864 55.5258620689655729 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 441.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.52586206896558 455.3899999999999864 459.7541379310343928 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.52586206896558 441.8899999999999864 Td
+(Deepfake Detection using Vision Transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 422.3899999999999864 55.5258620689655729 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 408.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.52586206896558 422.3899999999999864 459.7541379310343928 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.52586206896558 408.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 400.8899999999999864 55.5258620689655729 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 387.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.52586206896558 400.8899999999999864 459.7541379310343928 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.52586206896558 387.3899999999999864 Td
+(CNNs often fail to detect high-quality deepfakes generated by GANs. Vision Transformers \(ViT\) can) Tj
+T* (capture global pixel dependencies to spot inconsistent artifacts in fake faces.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 367.8899999999999864 55.5258620689655729 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 354.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.52586206896558 367.8899999999999864 459.7541379310343928 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.52586206896558 354.3899999999999864 Td
+(Python, PyTorch, Google ViT \(Vision Transformer\), OpenCV.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 334.8899999999999864 55.5258620689655729 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 321.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.52586206896558 334.8899999999999864 459.7541379310343928 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.52586206896558 321.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 5280
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 5: Automated Vulnerability Patching with LLMs) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000040541 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000040541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Automated Vulnerability Patching with LLMs) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000040541 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000040541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Identifying a bug is only half the battle; fixing it takes time. This project uses LLMs to not only find) Tj
+T* (vulnerabilities \(like Buffer Overflows\) in C/C++ code but also suggest the corrected code.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 687.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 674.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 687.8899999999999864 459.9800000000040541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 674.3899999999999864 Td
+(Python, Ollama \(Llama 3 or CodeLlama\), AST parsing, C/C++ datasets.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 654.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 641.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 654.8899999999999864 459.9800000000040541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 641.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 496.8899999999999864 Td
+(Project 6: Automated Digital Forensics Reporter) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 476.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 463.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 476.8899999999999864 459.9799999999579541 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 463.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 455.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 441.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 455.3899999999999864 459.9799999999579541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 441.8899999999999864 Td
+(Automated Digital Forensics Reporter) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 422.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 408.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 422.3899999999999864 459.9799999999579541 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 408.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 400.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 387.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 400.8899999999999864 459.9799999999579541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 387.3899999999999864 Td
+(Forensic analysts spend hours writing reports after analyzing disk images. This tool ingests raw) Tj
+T* (forensic logs \(e.g., from Autopsy\) and generates a human-readable legal case report.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 367.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 354.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 367.8899999999999864 459.9799999999579541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 354.3899999999999864 Td
+(Python, Autopsy \(for data\), OpenAI API or Llama 3, RAG \(Retrieval Augmented Generation\).) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 334.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 321.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 334.8899999999999864 459.9799999999579541 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 321.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 6273
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 7: Leveraging GAN-Based Generative Replay to Combat Catastrophic Forgetting in Malware Classification) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999997908 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999997908 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Leveraging GAN-Based Generative Replay to Combat Catastrophic Forgetting in Malware) Tj
+T* (Classification) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999997908 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -148. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999997908 -148. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Malware detection models are usually trained on fixed datasets and updated when new malware types) Tj
+T* (appear. During such updates, models often forget previously learned malware patterns, a problem) Tj
+T* (known as catastrophic forgetting. Retraining models using all old and new data is not practical due to) Tj
+T* (large data size and storage limitations. This propses to address this issue by using a GAN-based) Tj
+T* (generative replay approach, where synthetic malware samples are generated to represent older) Tj
+T* (malware classes. These generated samples are combined with new malware data during training to) Tj
+T* (help the model retain past knowledge. The effectiveness of this approach is evaluated by comparing) Tj
+T* (detection accuracy before and after learning new malware classes.) Tj
+T* (To overcome  hardware and other resources constraints, the original MalCL framework can be) Tj
+T* (downsized by using a smaller subset of the dataset, fewer malware classes, and reduced training) Tj
+T* (epochs preserving the core generative replay mechanism while ensuring feasible execution on) Tj
+T* (moderate resouces such as laptop.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 572.8899999999999864 55.3000000000000043 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 559.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 572.8899999999999864 459.9799999999997908 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 559.3899999999999864 Td
+(Python,PyTorch,Generative Adversarial Networks \(GAN\),Deep Neural Networks \(Classifier\),EMBER) Tj
+T* (Malware Dataset \(downsized\),Anaconda Environment) Tj
+T* () Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 528.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 514.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 528.3899999999999864 459.9799999999997908 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 514.8899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 370.3899999999999864 Td
+(Project 8: CRYSTAL DIFFUSION VARIATIONAL AUTOENCODER FOR PERIODIC MATERIAL GENERATION) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 350.3899999999999864 89.5237746891002644 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 336.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+129.5237746891002644 350.3899999999999864 425.7562253108997652 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+134.5237746891002644 336.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 328.8899999999999864 89.5237746891002644 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 315.3899999999999864 Td
+(Project Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+129.5237746891002644 328.8899999999999864 425.7562253108997652 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+134.5237746891002644 315.3899999999999864 Td
+(CRYSTAL DIFFUSION VARIATIONAL AUTOENCODER FOR PERIODIC MATERIAL) Tj
+T* (GENERATION) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 295.8899999999999864 89.5237746891002644 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 282.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+129.5237746891002644 295.8899999999999864 425.7562253108997652 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+134.5237746891002644 282.3899999999999864 Td
+(Data) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 274.3899999999999864 89.5237746891002644 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 260.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+129.5237746891002644 274.3899999999999864 425.7562253108997652 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+134.5237746891002644 260.8899999999999864 Td
+(https://arxiv.org/abs/2110.06197) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 241.3899999999999864 89.5237746891002644 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 227.8899999999999864 Td
+(Tech Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+129.5237746891002644 241.3899999999999864 425.7562253108997652 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+134.5237746891002644 227.8899999999999864 Td
+(Gen AI, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 219.8899999999999864 89.5237746891002644 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 206.3899999999999864 Td
+(Max Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+129.5237746891002644 219.8899999999999864 425.7562253108997652 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+134.5237746891002644 206.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+11 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 5991
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 9: MolGAN: An Implicit Generative Model for Small Molecular Graphs Authors: Nicola De Cao & Thomas Kipf Title: MolGAN: An implicit generative model for small molecular graphs) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000107616 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000107616 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(MolGAN: An Implicit Generative Model for Small Molecular Graphs Authors: Nicola De Cao & Thomas) Tj
+T* (Kipf Title: MolGAN: An implicit generative model for small molecular graphs) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000107616 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Data) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000107616 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(https://arxiv.org/abs/2110.06197) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 687.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 674.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 687.8899999999999864 459.9800000000107616 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 674.3899999999999864 Td
+(Gen AI, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 654.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 641.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 654.8899999999999864 459.9800000000107616 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 641.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 496.8899999999999864 Td
+(Project 10: Detecting Hallucinations in Large Language Models Using Internal State Semantics) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 476.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 463.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 476.8899999999999864 459.9800000000163891 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 463.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 455.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 441.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 455.3899999999999864 459.9800000000163891 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 441.8899999999999864 Td
+(Detecting Hallucinations in Large Language Models Using Internal State Semantics) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 422.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 408.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 422.3899999999999864 459.9800000000163891 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 408.8899999999999864 Td
+(LLMScan) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 400.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 387.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 400.8899999999999864 459.9800000000163891 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 387.3899999999999864 Td
+(Large Language Models \(LLMs\) are widely used today, but they often give answers that sound) Tj
+T* (confident even when they are wrong. These mistakes, called hallucinations, can be risky when AI is) Tj
+T* (used for learning, healthcare, or decision-making. This project focuses on detecting such) Tj
+T* (hallucinations by looking inside the model, instead of only checking its final answers. By studying the) Tj
+T* ( m o d e lÿý s   i n t e r n a l   r e p r e s e n t a t i o n s   w h i l e   i t   g e n e r a t e s   m u l t i p l e   r e s p o n s e s ,   w e   c a n   m e a s u r e   h o w) Tj
+T* (consistent or uncertain its understanding really is. This approach helps identify both confused and) Tj
+T* (overconfident wrong answers, making AI systems safer, more reliable, and easier to trust.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 310.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 296.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 310.3899999999999864 459.9800000000163891 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 296.8899999999999864 Td
+(Python + PyTorch + TransformerLens) Tj
+T* (FastAPI + Uvicorn) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 277.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 263.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 277.3899999999999864 459.9800000000163891 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 263.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+13 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 6598
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 11: LLMSCAN: Causal Scan for LLM Misbehavior Detection) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999966076 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999966076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(LLMSCAN: Causal Scan for LLM Misbehavior Detection) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999966076 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(LLMScan) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999966076 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Large Language Models \(LLMs\) sometimes behave incorrectly by producing harmful, biased, or) Tj
+T* (unsafe outputs, even when they appear confident. This paper introduces LLMSCAN, a method that) Tj
+T* (detects such misbehavior by analyzing how different internal components of an LLM cause its final) Tj
+T* (output. Instead of only checking what the model says, LLMSCAN studies how changing or intervening) Tj
+T* ( i n   i n t e r n a l   a c t i v a t i o n s   a f f e c t s   t h e   m o d e lÿý s   b e h a v i o r .   B y   u s i n g   c a u s a l   a n a l y s i s ,   t h i s   a p p r o a c h   h e l p s) Tj
+T* (identify hidden sources of misbehavior inside the model, making it easier to audit, debug, and improve) Tj
+T* (the safety of LLMs.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 630.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 616.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 630.3899999999999864 459.9799999999966076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 616.8899999999999864 Td
+(LLaMA-2 / Mistral+PyTorch+Hugging Face+PyTorch forward hooks+Scaling, zeroing, noise +) Tj
+T* (Pandas+FastAPI+Streamlit) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 597.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 583.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 597.3899999999999864 459.9799999999966076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 583.8899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 439.3899999999999864 Td
+(Project 12: Psychological Steering in LLMs: An Evaluation of Effectiveness and Trustworthiness) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 419.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 405.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 419.3899999999999864 459.9799999999507918 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 405.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 397.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 384.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 397.8899999999999864 459.9799999999507918 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 384.3899999999999864 Td
+(Psychological Steering in LLMs: An Evaluation of Effectiveness and Trustworthiness) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 364.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 351.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 364.8899999999999864 459.9799999999507918 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 351.3899999999999864 Td
+(LLMScan) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 343.3899999999999864 55.3000000000000043 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 329.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 343.3899999999999864 459.9799999999507918 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 329.8899999999999864 Td
+(Large Language Models \(LLMs\) can be influenced by the way prompts are written, especially when) Tj
+T* (they include psychological cues such as authority, emotion, urgency, or social pressure. This paper) Tj
+T* ( s t u d i e s   p s y c h o l o g i c a l   s t e e r i n g ,   w h i c h   r e f e r s   t o   i n t e n t i o n a l l y   g u i d i n g   a n   L L Mÿý s   r e s p o n s e s   u s i n g   s u c h) Tj
+T* (cues. The goal is to evaluate how effective these techniques are and whether they affect the) Tj
+T* ( t r u s t w o r t h i n e s s   o f   t h e   m o d e lÿý s   o u t p u t s .   U n d e r s t a n d i n g   p s y c h o l o g i c a l   s t e e r i n g   i s   i m p o r t a n t   t o   e n s u r e) Tj
+T* (that LLMs remain reliable, unbiased, and safe when interacting with users.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 264.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 250.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 264.3899999999999864 459.9799999999507918 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 250.8899999999999864 Td
+(LLaMA-2 / Mistral+PyTorch+Hugging Face+PyTorch + Transformers Pandas+FastAPI+Streamlit) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 231.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 217.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 231.3899999999999864 459.9799999999507918 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 217.8899999999999864 Td
+(5) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+15 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 5390
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 13: AI-Based Dietary Assessment and Nutrient Estimation using multimodal large language models) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3751131221720243 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3751131221720243 796.8899999999999864 459.9048868778279484 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3751131221720243 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3751131221720243 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3751131221720243 775.3899999999999864 459.9048868778279484 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3751131221720243 761.8899999999999864 Td
+(AI-Based Dietary Assessment and Nutrient Estimation using multimodal large language models) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3751131221720243 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3751131221720243 742.3899999999999864 459.9048868778279484 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3751131221720243 728.8899999999999864 Td
+(Nutra) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3751131221720243 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3751131221720243 720.8899999999999864 459.9048868778279484 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3751131221720243 707.3899999999999864 Td
+(Develop a mobile application that performs dietary assessment from food images and estimates the) Tj
+T* (nutrient content of consumed foods using multimodal large language models.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 687.8899999999999864 55.3751131221720243 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 674.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3751131221720243 687.8899999999999864 459.9048868778279484 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3751131221720243 674.3899999999999864 Td
+(Flutter/kotlin,firebase,GPT_Vision_Model,RAG,Redis/celery,JWT) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 654.8899999999999864 55.3751131221720243 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 641.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3751131221720243 654.8899999999999864 459.9048868778279484 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3751131221720243 641.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 496.8899999999999864 Td
+(Project 14: AI identification of plant diseases and the classification of natural drug compounds) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 476.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 463.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 476.8899999999999864 459.9799999999852957 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 463.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 455.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 441.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 455.3899999999999864 459.9799999999852957 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 441.8899999999999864 Td
+(AI identification of plant diseases and the classification of natural drug compounds) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 422.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 408.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 422.3899999999999864 459.9799999999852957 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 408.8899999999999864 Td
+(Nutra) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 400.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 387.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 400.8899999999999864 459.9799999999852957 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 387.3899999999999864 Td
+(Develop a mobile-based artificial intelligence platform for the identification of plant diseases and the) Tj
+T* (classification of natural drug compounds sourced from plants, fungi, and bacteria.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 367.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 354.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 367.8899999999999864 459.9799999999852957 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 354.3899999999999864 Td
+(CNN,ML,Flutter/kotlin,JWT,Redis/celery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 334.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 321.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 334.8899999999999864 459.9799999999852957 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 321.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+17 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 18 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 5548
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 15: Multimodal platform for NutritionVQA) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000305999 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000305999 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Multimodal platform for NutritionVQA) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000305999 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Nutra) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000305999 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Develop a mobile based multimodal platform to capture and reason about the relationships between) Tj
+T* (nutrients, including vitamins, minerals, and macronutrients, and their associated health outcomes) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 687.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 674.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 687.8899999999999864 459.9800000000305999 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 674.3899999999999864 Td
+(VLM,Flutter/kotlin,JWT,Redis/celery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 654.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 641.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 654.8899999999999864 459.9800000000305999 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 641.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 496.8899999999999864 Td
+(Project 16: A Deep Learning Web Platform for Sonogram-Based Lactation Stage Classification in Dairy Cows) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 476.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 463.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 476.8899999999999864 459.9799999999505076 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 463.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 455.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 441.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 455.3899999999999864 459.9799999999505076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 441.8899999999999864 Td
+(A Deep Learning Web Platform for Sonogram-Based Lactation Stage Classification in Dairy Cows) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 422.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 408.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 422.3899999999999864 459.9799999999505076 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 408.8899999999999864 Td
+(Nutra) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 400.8899999999999864 55.3000000000000043 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 387.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 400.8899999999999864 459.9799999999505076 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 387.3899999999999864 Td
+( D e v e l o p   a   w e b - b a s e d   p l a t f o r m   t h a t   d e m o n s t r a t e s   t h e   e f f e c t i v e n e s s   o f   d e e p   l e a r n i n gÿý b a s e d   s o n o g r a m) Tj
+T* (analysis for dairy production assessment by classifying dairy cows according to lactation status and) Tj
+T* (distinguishing between major productive stages, including the dry period, peak lactation, late lactation,) Tj
+T* (fresh cows, and peri-partum stages) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 344.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 331.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 344.8899999999999864 459.9799999999505076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 331.3899999999999864 Td
+(CNN,ML,MERN,JWT,Redis/celery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 311.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 298.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 311.8899999999999864 459.9799999999505076 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 298.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+19 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 20 0 R
+>>
+endobj
+20 0 obj
+<<
+/Length 6262
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 17: An AI Based Mental Health Chatbot for Stress Detection) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999568172 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999568172 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(An AI Based Mental Health Chatbot for Stress Detection) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999568172 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999568172 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Stress often goes unnoticed because individuals hesitate to seek professional help or lack access to) Tj
+T* (mental health services. Many people express their emotions indirectly through text messages in daily) Tj
+T* (conversation. There is a need for an automated conversational system that can interpret natural) Tj
+T* (language, detect stress levels, and provide timely support. SilentStress Detector aims to identify stress) Tj
+T* (from user messages using NLP and deep learning and respond with appropriate advice, thus offering) Tj
+T* (early emotional assistance.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 641.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 628.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 641.8899999999999864 459.9799999999568172 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 628.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 608.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 595.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 608.8899999999999864 459.9799999999568172 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 595.3899999999999864 Td
+(2) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 450.8899999999999864 Td
+(Project 18: NeuroTalk AI: LLM Based Cognitive & Emotional Pattern Analysis System) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 430.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 417.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 430.8899999999999864 459.9800000000169007 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 417.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 409.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 395.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 409.3899999999999864 459.9800000000169007 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 395.8899999999999864 Td
+(NeuroTalk AI: LLM Based Cognitive & Emotional Pattern Analysis System) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 376.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 362.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 376.3899999999999864 459.9800000000169007 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 362.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 354.8899999999999864 55.3000000000000043 -113.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 341.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 354.8899999999999864 459.9800000000169007 -113.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 341.3899999999999864 Td
+(Mental well being issues often remain unnoticed as individuals may not explicitly express emotional) Tj
+T* (distress or may lack access to professional assessment tools. While people frequently communicate) Tj
+T* (their thoughts and emotions through text, manual interpretation of such data is subjective and) Tj
+T* (inconsistent. Existing mental health assessment systems are either clinically complex, invasive, or) Tj
+T* (unsuitable for large-scale use.) Tj
+T* (There is a need for an automated, ethical, and language-based system that can analyze textual inputs) Tj
+T* (to identify emotional and cognitive patterns indicative of mental well-being without performing medical) Tj
+T* (diagnosis. NeuroTalk AI addresses this need by using LLM-based natural language understanding to) Tj
+T* (provide awareness-driven emotional and cognitive insights from user text.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 241.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 227.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 241.3899999999999864 459.9800000000169007 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 227.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 208.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 194.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 208.3899999999999864 459.9800000000169007 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 194.8899999999999864 Td
+(2) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+21 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 5999
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 19: SleepSense AI : Sleep, Behavior and Voice Based Mental Well Being Analysis) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999719944 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999719944 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(SleepSense AI : Sleep, Behavior and Voice Based Mental Well Being Analysis) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999719944 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -102. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999719944 -102. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(While poor sleep is widely recognized as a risk factor for mental health difficulties, most educational) Tj
+T* (tools fail to combine quantitative sleep metrics, personal subjective experiences, and acoustic speech) Tj
+T* (features in a unified analysis. Clinical research indicates that vocal prosody and acoustic cues) Tj
+T* ( c o r r e l a t e   w i t h   e m o t i o n a l   s t a t e s   a n d   m e n t a l   h e a l t h   c o n d i t i o n s  ÿý   y e t   s u c h   m u l t i m o d a l   a n a l y s i s   r e m a i n s) Tj
+T* (uncommon in undergraduate projects due to perceived complexity. ) Tj
+T* (There is a need for a system that integrates sleep data, user-reported textual feedback, and speech) Tj
+T* (acoustics to generate richer insights into mental well-being. SleepSense AI addresses this by) Tj
+T* (combining simplified multimodal techniques within a web environment.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 618.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 605.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 618.8899999999999864 459.9799999999719944 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 605.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 585.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 572.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 585.8899999999999864 459.9799999999719944 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 572.3899999999999864 Td
+(2) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 427.8899999999999864 Td
+(Project 20: Learning in Focus: Detecting Behavioral and Collaborative Engagement Using Vision Transformers) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 407.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 394.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 407.8899999999999864 459.9799999999621605 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 394.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 386.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 372.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 386.3899999999999864 459.9799999999621605 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 372.8899999999999864 Td
+(Learning in Focus: Detecting Behavioral and Collaborative Engagement Using Vision Transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 353.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 339.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 353.3899999999999864 459.9799999999621605 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 339.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 331.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 318.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 331.8899999999999864 459.9799999999621605 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 318.3899999999999864 Td
+(AI-driven approach that leverages Vision Transformers \(ViTs\) to automatically classify childrens) Tj
+T* (engagement using visual cues such as gaze direction, interaction, and peer collaboration.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 298.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 285.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 298.8899999999999864 459.9799999999621605 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 285.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 265.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 252.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 265.8899999999999864 459.9799999999621605 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 252.3899999999999864 Td
+(2) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+23 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 24 0 R
+>>
+endobj
+24 0 obj
+<<
+/Length 5237
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 21: Menta: A Small Language Model for On-Device Mental Health Prediction) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 80.2090775028675012 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+120.2090775028675012 796.8899999999999864 435.0709224971324716 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+125.2090775028675012 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 80.2090775028675012 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+120.2090775028675012 775.3899999999999864 435.0709224971324716 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+125.2090775028675012 761.8899999999999864 Td
+(Menta: A Small Language Model for On-Device Mental Health Prediction) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 753.8899999999999864 80.2090775028675012 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 740.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+120.2090775028675012 753.8899999999999864 435.0709224971324716 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+125.2090775028675012 740.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 732.3899999999999864 80.2090775028675012 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 718.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+120.2090775028675012 732.3899999999999864 435.0709224971324716 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+125.2090775028675012 718.8899999999999864 Td
+(Menta, the first optimized SLM fine tuned specifically for multi-task mental health prediction from) Tj
+T* (social media data.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 699.3899999999999864 80.2090775028675012 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 685.8899999999999864 Td
+(Tech Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+120.2090775028675012 699.3899999999999864 435.0709224971324716 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+125.2090775028675012 685.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 677.8899999999999864 80.2090775028675012 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 664.3899999999999864 Td
+(Max Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+120.2090775028675012 677.8899999999999864 435.0709224971324716 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+125.2090775028675012 664.3899999999999864 Td
+(1) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 531.3899999999999864 Td
+(Project 22: Detecting schizophrenia with 3D structural brain MRI using deep learning \(Nature, Challenging project, talks about building a transformer model from scratch\)) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 511.3899999999999864 61.5356379635450068 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 497.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+101.5356379635450139 511.3899999999999864 453.7443620364549588 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+106.5356379635450139 497.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 489.8899999999999864 61.5356379635450068 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 476.3899999999999864 Td
+(Project Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+101.5356379635450139 489.8899999999999864 453.7443620364549588 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+106.5356379635450139 476.3899999999999864 Td
+(Detecting schizophrenia with 3D structural brain MRI using deep learning \(Nature, Challenging) Tj
+T* (project, talks about building a transformer model from scratch\)) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 456.8899999999999864 61.5356379635450068 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 443.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+101.5356379635450139 456.8899999999999864 453.7443620364549588 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+106.5356379635450139 443.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 435.3899999999999864 61.5356379635450068 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 421.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+101.5356379635450139 435.3899999999999864 453.7443620364549588 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+106.5356379635450139 421.8899999999999864 Td
+(Detecting schizophrenia with 3D) Tj
+T* (structural brain MRI using deep) Tj
+T* (learning) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 390.8899999999999864 61.5356379635450068 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 377.3899999999999864 Td
+(Tech Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+101.5356379635450139 390.8899999999999864 453.7443620364549588 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+106.5356379635450139 377.3899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 369.3899999999999864 61.5356379635450068 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 355.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+101.5356379635450139 369.3899999999999864 453.7443620364549588 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+106.5356379635450139 355.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+25 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 26 0 R
+>>
+endobj
+26 0 obj
+<<
+/Length 6760
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 23: Speech-Based Estimation of Schizophrenia Severity) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999726765 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999726765 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Speech-Based Estimation of Schizophrenia Severity) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999726765 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999726765 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Speech-based assessment of the schizophrenia spectrum has been widely researched over in the) Tj
+T* (recent past. In this study, we develop a deep learning framework to estimate schizophrenia severity) Tj
+T* (scores from speech using a feature fusion approach that fuses articulatory features with different) Tj
+T* (selfsupervised speech features extracted from pre-trained audio models \( Achitecture : Vector) Tj
+T* (Quantized Variational Auto Encoder - VQ-VAE-based articulatory representation learning model \)) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 653.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 639.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 653.3899999999999864 459.9799999999726765 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 639.8899999999999864 Td
+(Neuro) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 620.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 606.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 620.3899999999999864 459.9799999999726765 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 606.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 462.3899999999999864 Td
+(Project 24: LLM-Prop: predicting the properties of crystalline materials using large language models) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 442.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 428.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 442.3899999999999864 459.9800000000492446 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 428.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 420.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 407.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 420.8899999999999864 459.9800000000492446 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 407.3899999999999864 Td
+(LLM-Prop: predicting the properties of crystalline materials using large language models) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 387.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 374.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 387.8899999999999864 459.9800000000492446 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 374.3899999999999864 Td
+(Crystal) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 366.3899999999999864 55.3000000000000043 -159.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 352.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 366.3899999999999864 459.9800000000492446 -159.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 352.8899999999999864 Td
+(Develop an end to end deep learning system that predicts a crystalline materials band gap \(in electron) Tj
+T* (volts, eV\) from its natural-language crystal structure description. These descriptions can be generated) Tj
+T* (from a CIF \(Crystallographic Information File\) using Robocrystallographer, a tool that automatically) Tj
+T* (produces a deterministic, human readable text description of a crystal structure given its CIF file.) Tj
+T* (Using an instructor-provided dataset \(or a subset of TextEdge from the LLM Prop work, where LLM =) Tj
+T* (Large Language Model\), create training/validation/test splits, preprocess the text, and fine-tune a) Tj
+T* (pretrained Transformer encoder \(recommended: the encoder of T5 small, where T5 = Text to Text) Tj
+T* (Transfer Transformer\) with a small regression head to output the band gap value. Evaluate and report) Tj
+T* (performance using MAE \(Mean Absolute Error\) on a held-out test set, and provide a simple demo) Tj
+T* (such as a CLI \(Command Line Interface\) program where a user pastes a crystal description and) Tj
+T* (receives the predicted band gap. Submit a runnable code repository, a short report describing the) Tj
+T* (dataset, model, training setup, and results, and the demo script; benchmarking against simpler) Tj
+T* (baselines and ablation/preprocessing studies are optional if time permits.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 206.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 193.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 206.8899999999999864 459.9800000000492446 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 193.3899999999999864 Td
+(Gen AI, Mern Stack, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 173.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 160.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 173.8899999999999864 459.9800000000492446 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 160.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+27 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 7196
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 25: Quokka: An Open-source Large Language Model ChatBot for Material Science) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000360001 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000360001 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Quokka: An Open-source Large Language Model ChatBot for Material Science) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000360001 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Crystal) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000360001 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Develop a specialized chatbot for materials science, leveraging the Llama family \(or other\)  language) Tj
+T* (model, and continuing pre-training on the expansive research articles in the materials science domain) Tj
+T* (from the S2ORC \(or other relevant\) dataset. The methodology involves an initial pretraining phase on) Tj
+T* (domain-specific papers, followed by an instruction-tuning process to refine the chatbot's capabilities.) Tj
+T* (The chatbot is designed to assist researchers, educators, and students by providing instant,) Tj
+T* (context-aware responses to queries in the field of materials science.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 641.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 628.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 641.8899999999999864 459.9800000000360001 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 628.3899999999999864 Td
+(Gen AI, Mern Stack, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 608.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 595.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 608.8899999999999864 459.9800000000360001 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 595.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 450.8899999999999864 Td
+(Project 26: CrysText: A Generative AI Approach for Text-Conditioned Crystal Structure Generation using LLM) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 430.8899999999999864 91.3958177744586067 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 417.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+131.3958177744586067 430.8899999999999864 423.8841822255414513 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+136.3958177744586067 417.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 409.3899999999999864 91.3958177744586067 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 395.8899999999999864 Td
+(Project Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+131.3958177744586067 409.3899999999999864 423.8841822255414513 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+136.3958177744586067 395.8899999999999864 Td
+(CrysText: A Generative AI Approach for Text-Conditioned Crystal Structure Generation using) Tj
+T* (LLM) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 376.3899999999999864 91.3958177744586067 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 362.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+131.3958177744586067 376.3899999999999864 423.8841822255414513 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+136.3958177744586067 362.8899999999999864 Td
+(Crystal) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 354.8899999999999864 91.3958177744586067 -286. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 341.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+131.3958177744586067 354.8899999999999864 423.8841822255414513 -286. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+136.3958177744586067 341.3899999999999864 Td
+(Generating crystal structures directly from textual descriptions marks a pivotal advancement in) Tj
+T* (materials informatics, offering a streamlined pathway from concept to discovery. Integrating) Tj
+T* (generative models into Crystal Structure Prediction \(CSP\) presents a transformative) Tj
+T* (opportunity) Tj
+T* (to enhance efficiency and innovation. While large language models \(LLMs\) excel at) Tj
+T* (understanding) Tj
+T* (and generating text, their potential in materials discovery remains largely unexplored. Here,) Tj
+T* (we) Tj
+T* (introduce CrysText, an advanced approach for generating crystal structures from simple text) Tj
+T* (prompts, conditioned on material composition and space group number. Leveraging) Tj
+T* (Llama-3.1-) Tj
+T* (8B fine-tuned with Quantized Low-Rank Adaptation \(QLoRA\), our approach enables the) Tj
+T* (efficient) Tj
+T* (and scalable generation of CIF-formatted structures directly from input descriptions,) Tj
+T* (eliminating) Tj
+T* (the need for post-processing and ensuring effective fine-tuning with rapid inference.) Tj
+T* (Evaluations) Tj
+T* (on the MP-20 benchmark dataset demonstrate high structure match rates and effective RMSE) Tj
+T* (metrics, showcasing the framework's ability to generate crystal structures that faithfully adhere) Tj
+T* (to) Tj
+T* (specified compositions and crystal symmetries. By conditioning on energy above the hull, we) Tj
+T* (further demonstrate the potential of CrysText to generate stable crystal structures. Our work) Tj
+T* (highlights the transformative role of LLMs in text-prompted inverse design, accelerating the) Tj
+T* (discovery of new materials.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 68.8899999999999864 91.3958177744586067 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 55.3899999999999864 Td
+(Tech Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+131.3958177744586067 68.8899999999999864 423.8841822255414513 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+136.3958177744586067 55.3899999999999864 Td
+(Gen AI, Mern Stack, Python) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 47.3899999999999864 91.3958177744586067 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 33.8899999999999864 Td
+(Max Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+131.3958177744586067 47.3899999999999864 423.8841822255414513 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+136.3958177744586067 33.8899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+29 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 30 0 R
+>>
+endobj
+30 0 obj
+<<
+/Length 6623
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 27: Automated Seizure Detection using Transformer Models on Multi-Channel EEGs) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000151954 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000151954 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Automated Seizure Detection using Transformer Models on Multi-Channel EEGs) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000151954 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000151954 -79. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Epilepsy affects 50 million people worldwide, with recurrent seizures requiring early prediction to) Tj
+T* (prevent severe complications. Scalp EEGs enable noninvasive seizure forecasting, but manual) Tj
+T* (annotation is labor-intensive, costly, and inconsistent across clinicians. Automated deep learning) Tj
+T* (solutions are essential for efficient multi-channel EEG analysis. This hybrid CNN-Transformer) Tj
+T* (framework uses CNN for local temporal-spatial feature extraction from raw EEG and Transformer for) Tj
+T* (long-range dependencies. It enables timely seizure prediction, outperforming SOTA baselines) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 641.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 628.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 641.8899999999999864 459.9800000000151954 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 628.3899999999999864 Td
+(CNN \(EEGNet\), Transformer Encoder,Frameworks: PyTorch, MNE-Python, Conda Environment) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 608.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 595.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 608.8899999999999864 459.9800000000151954 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 595.3899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 450.8899999999999864 Td
+(Project 28: Deep learning models for the prediction of acute postoperative pain in PACU) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 430.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 417.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 430.8899999999999864 459.9800000000239493 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 417.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 409.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 395.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 409.3899999999999864 459.9800000000239493 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 395.8899999999999864 Td
+(Deep learning models for the prediction of acute postoperative pain in PACU) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 376.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 362.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 376.3899999999999864 459.9800000000239493 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 362.8899999999999864 Td
+(Cyber) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 354.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 341.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 354.8899999999999864 459.9800000000239493 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 341.3899999999999864 Td
+(Acute postoperative pain affects 30-50% of patients in PACU, prolonging recovery and increasing) Tj
+T* (opioid use, with current prediction methods relying on subjective clinical judgment without integrating) Tj
+T* ( r e a l - t i m e   i n t r a o p e r a t i v e   v i t a l   s i g n s .   D o s e F o r m e rÿý a   n o v e l   G r a p h   T r a n s f o r m e r   N e t w o r k   \( G T N \)   +   G r a p h) Tj
+T* ( A t t e n t i o n   N e t w o r k   \( G A T \)ÿý j o i n t l y   p r o c e s s e s   s t a t i c   p a t i e n t   f e a t u r e s   \( d e m o g r a p h i c s ,   c o m o r b i d i t i e s \)   a n d) Tj
+T* (dynamic time-series vitals across surgical phases via multi-head attention mechanisms. This) Tj
+T* (transformer-based deep learning approach, demonstrated through code implementation, enables) Tj
+T* (automated perioperative risk stratification and lays foundation for neurosurgery extension) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 264.3899999999999864 55.3000000000000043 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 250.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 264.3899999999999864 459.9800000000239493 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 250.8899999999999864 Td
+() Tj
+T* (Transformers,Graph Neural Networks,Time-Series Analysis,Multi-Modal Fusion, Attention Mechanisms) Tj
+T* (and PyTorch) Tj
+T* () Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 208.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 194.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 208.3899999999999864 459.9800000000239493 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 194.8899999999999864 Td
+(3) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+31 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 32 0 R
+>>
+endobj
+32 0 obj
+<<
+/Length 6653
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 29: ABFormer: A Transformer-based Model to Enhance Antibody-Drug Conjugates Activity Prediction through Contextualized Antibody-Antigen Embedding) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000416844 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(ABFormer: A Transformer-based Model to Enhance Antibody-Drug Conjugates Activity Prediction) Tj
+T* (through Contextualized Antibody-Antigen Embedding) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000416844 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Drug Discovery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000416844 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(These research papers have been developed by students of DrugParadigm \(K-Hub\), and several of) Tj
+T* (them are currently under peer review. To protect the originality, intellectual property, and publication) Tj
+T* (priority of this work, please ensure that no content , including abstracts, figures, results, or) Tj
+T* (methodological details is shared on public platforms, repositories, social media, or preprint servers.) Tj
+T* (Internal use for learning, discussion, and feedback is okay and the use of AI tools such as ChatGPT or) Tj
+T* (similar assistants is fine as well. Any external sharing must receive prior written approval from) Tj
+T* (DrugParadigm until the peer-review and publication process is complete.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 630.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 616.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 630.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 616.8899999999999864 Td
+(GNNs , Transformers , Diffusion , GVP , GCN , RDkit , Auto Dock , SE3 transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 597.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 583.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 597.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 583.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 439.3899999999999864 Td
+(Project 30: Macro Equi Diff \(MED\): De Novo Macrocycles Generation Using Equivariant Diffusion) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 419.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 405.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 419.3899999999999864 459.9800000000416844 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 405.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 397.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 384.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 397.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 384.3899999999999864 Td
+(Macro Equi Diff \(MED\): De Novo Macrocycles Generation Using Equivariant Diffusion) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 364.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 351.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 364.8899999999999864 459.9800000000416844 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 351.3899999999999864 Td
+(Drug Discovery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 343.3899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 329.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 343.3899999999999864 459.9800000000416844 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 329.8899999999999864 Td
+(These research papers have been developed by students of DrugParadigm \(K-Hub\), and several of) Tj
+T* (them are currently under peer review. To protect the originality, intellectual property, and publication) Tj
+T* (priority of this work, please ensure that no content , including abstracts, figures, results, or) Tj
+T* (methodological details is shared on public platforms, repositories, social media, or preprint servers.) Tj
+T* (Internal use for learning, discussion, and feedback is okay and the use of AI tools such as ChatGPT or) Tj
+T* (similar assistants is fine as well. Any external sharing must receive prior written approval from) Tj
+T* (DrugParadigm until the peer-review and publication process is complete.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 252.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 239.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 252.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 239.3899999999999864 Td
+(GNNs , Transformers , Diffusion , GVP , GCN , RDkit , Auto Dock , SE3 transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 219.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 206.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 219.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 206.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+33 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 6513
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 31: CrossPPI: A Cross Fusion Based Model for Protein Protein Binding Affinity Prediction) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9800000000416844 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(CrossPPI: A Cross Fusion Based Model for Protein Protein Binding Affinity Prediction) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9800000000416844 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(Drug Discovery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9800000000416844 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(These research papers have been developed by students of DrugParadigm \(K-Hub\), and several of) Tj
+T* (them are currently under peer review. To protect the originality, intellectual property, and publication) Tj
+T* (priority of this work, please ensure that no content , including abstracts, figures, results, or) Tj
+T* (methodological details is shared on public platforms, repositories, social media, or preprint servers.) Tj
+T* (Internal use for learning, discussion, and feedback is okay and the use of AI tools such as ChatGPT or) Tj
+T* (similar assistants is fine as well. Any external sharing must receive prior written approval from) Tj
+T* (DrugParadigm until the peer-review and publication process is complete.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 630.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 616.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 630.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 616.8899999999999864 Td
+(GNNs , Transformers , Diffusion , GVP , GCN , RDkit , Auto Dock , SE3 transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 597.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 583.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 597.3899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 583.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 439.3899999999999864 Td
+(Project 32: SE\(3\) PROTACs: Geometric Deep Learning for PROTAC Degradation Prediction) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 419.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 405.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 419.3899999999999864 459.9800000000416844 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 405.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 397.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 384.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 397.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 384.3899999999999864 Td
+(SE\(3\) PROTACs: Geometric Deep Learning for PROTAC Degradation Prediction) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 364.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 351.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 364.8899999999999864 459.9800000000416844 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 351.3899999999999864 Td
+(Drug Discovery) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 343.3899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 329.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 343.3899999999999864 459.9800000000416844 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 329.8899999999999864 Td
+(These research papers have been developed by students of DrugParadigm \(K-Hub\), and several of) Tj
+T* (them are currently under peer review. To protect the originality, intellectual property, and publication) Tj
+T* (priority of this work, please ensure that no content , including abstracts, figures, results, or) Tj
+T* (methodological details is shared on public platforms, repositories, social media, or preprint servers.) Tj
+T* (Internal use for learning, discussion, and feedback is okay and the use of AI tools such as ChatGPT or) Tj
+T* (similar assistants is fine as well. Any external sharing must receive prior written approval from) Tj
+T* (DrugParadigm until the peer-review and publication process is complete.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 252.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 239.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 252.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 239.3899999999999864 Td
+(GNNs , Transformers , Diffusion , GVP , GCN , RDkit , Auto Dock , SE3 transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 219.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 206.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 219.8899999999999864 459.9800000000416844 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 206.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R ]
+/Count 16
+>>
+endobj
+35 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+36 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+37 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+38 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+39 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+40 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+41 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+42 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+43 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+44 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+45 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+46 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+47 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+48 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 35 0 R
+/F2 36 0 R
+/F3 37 0 R
+/F4 38 0 R
+/F5 39 0 R
+/F6 40 0 R
+/F7 41 0 R
+/F8 42 0 R
+/F9 43 0 R
+/F10 44 0 R
+/F11 45 0 R
+/F12 46 0 R
+/F13 47 0 R
+/F14 48 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+49 0 obj
+<<
+/Producer (jsPDF 2.5.1)
+/CreationDate (D:20260204120842+05'30')
+>>
+endobj
+50 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 51
+0000000000 65535 f 
+0000100579 00000 n 
+0000102504 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000006133 00000 n 
+0000006270 00000 n 
+0000011572 00000 n 
+0000011709 00000 n 
+0000017041 00000 n 
+0000017179 00000 n 
+0000023505 00000 n 
+0000023644 00000 n 
+0000029688 00000 n 
+0000029827 00000 n 
+0000036478 00000 n 
+0000036617 00000 n 
+0000042060 00000 n 
+0000042199 00000 n 
+0000047800 00000 n 
+0000047939 00000 n 
+0000054254 00000 n 
+0000054393 00000 n 
+0000060445 00000 n 
+0000060584 00000 n 
+0000065874 00000 n 
+0000066013 00000 n 
+0000072826 00000 n 
+0000072965 00000 n 
+0000080214 00000 n 
+0000080353 00000 n 
+0000087029 00000 n 
+0000087168 00000 n 
+0000093874 00000 n 
+0000094013 00000 n 
+0000100739 00000 n 
+0000100865 00000 n 
+0000100996 00000 n 
+0000101130 00000 n 
+0000101268 00000 n 
+0000101392 00000 n 
+0000101521 00000 n 
+0000101653 00000 n 
+0000101789 00000 n 
+0000101917 00000 n 
+0000102044 00000 n 
+0000102173 00000 n 
+0000102306 00000 n 
+0000102408 00000 n 
+0000102757 00000 n 
+0000102843 00000 n 
+trailer
+<<
+/Size 51
+/Root 50 0 R
+/Info 49 0 R
+/ID [ <0E06D721C652A9D0F54650EFC5C8D220> <0E06D721C652A9D0F54650EFC5C8D220> ]
+>>
+startxref
+102947
+%%EOF
