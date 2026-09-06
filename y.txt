@@ -247,3 +247,42 @@ Pull Request
 LENOVO@DESKTOP-4AM3AF0 MINGW64 ~/Desktop/gitts (master)
 $
 
+DOCKER COMMANDS:
+
+docker images #list the images
+docker ps #list running containers
+docker ps -a #list exited and running containers (All)
+docker rmi <image name> #delete the image
+docker rm <containers name> #delete the container
+docker rmi $(docker images-q) #delete all the images
+docker rm $(docker ps-q) #delete all the current running containers
+
+creating images:
+
+docker pull ubuntu
+docker run -d --name -p 9090:8080 tomcat
+docker run -it --name image1 ubuntu
+
+apt-get update -- RUN
+apt-get install git -y
+apt-get install docker.io
+exit
+
+docker images
+docker ps
+
+docker start <container id / container name>
+
+docker exec -it <container name / container id> /bin/bash
+
+push into docker hub
+
+docker login
+
+docker commit a6f7e375e82d1c5e721da7cefd2d48a9c42503e60d316fac79d8344b5be0c547 ubuntu-git-docker
+docker commit <id> <alias>
+docker login
+docker tag <alias><dockerhub userid/newname(or)oldname>
+docker push <name>
+
+docker build -t <dockerhub_username>/<repo_name> .
