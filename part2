@@ -1,0 +1,189 @@
+For **Part II (Git & GitHub)**, you don't need to import anything into Eclipse specifically. First get the project on your computer, then perform the Git operations.
+
+## Part II — Exact practical process
+
+### Step 1: Get the project
+
+If you haven't cloned it:
+
+```bash
+git clone https://github.com/deepthisagar7/library-management.git
+```
+
+Then:
+
+```bash
+cd library-management
+```
+
+---
+
+## 2.a — Initialize and push
+
+```bash
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/deepthisagar7/library-management.git
+git push -u origin main
+```
+
+---
+
+## 2.b — Change commit message
+
+If the last commit says:
+
+```text
+Added Book Managment Module
+```
+
+change it to:
+
+```text
+Added Book Management Module
+```
+
+using:
+
+```bash
+git commit --amend -m "Added Book Management Module"
+```
+
+---
+
+## 2.c — Create feature branch
+
+```bash
+git switch -c feature/book-management
+```
+
+---
+
+## 2.d — Restore `Book.java`
+
+If `Book.java` was accidentally deleted:
+
+```bash
+git restore Book.java
+```
+
+---
+
+## 2.e — Merge conflict
+
+```bash
+git switch feature/book-management
+git merge main
+```
+
+If there is a conflict:
+
+```bash
+git status
+```
+
+Open the conflicted file → resolve the code → remove:
+
+```text
+<<<<<<<
+=======
+>>>>>>>
+```
+
+Then:
+
+```bash
+git add .
+git commit -m "Resolve merge conflict"
+git push origin feature/book-management
+```
+
+---
+
+## 2.f — Accidentally staged unwanted files
+
+Check:
+
+```bash
+git status
+```
+
+Unstage everything:
+
+```bash
+git restore --staged .
+```
+
+Create `.gitignore`:
+
+```gitignore
+target/
+*.class
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+*.log
+```
+
+Then:
+
+```bash
+git add .gitignore
+git add .
+git status
+```
+
+---
+
+## 2.g — Incorrect latest commit
+
+### If NOT pushed:
+
+```bash
+git commit --amend
+```
+
+or:
+
+```bash
+git reset --soft HEAD~1
+```
+
+### If ALREADY pushed:
+
+```bash
+git revert HEAD
+git push
+```
+
+---
+
+### So for Part II, the basic flow is:
+
+```text
+GitHub Repository
+       ↓
+git clone
+       ↓
+cd library-management
+       ↓
+git init
+       ↓
+git add .
+       ↓
+git commit
+       ↓
+git remote add origin
+       ↓
+git push
+       ↓
+branches / restore / merge conflicts / gitignore / revert
+```
+
+**You can do all of Part II from Git Bash/Terminal. Eclipse is not required for the Git commands**, except that you may use Eclipse to edit a file when resolving a merge conflict.
