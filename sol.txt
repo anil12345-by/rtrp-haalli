@@ -1,0 +1,825 @@
+Got it. Here is the **complete practical process for the entire paper**, in the exact order **Part II → Part I → Part III**, without over-explaining.
+
+# PART II — Git & GitHub [40 Marks]
+
+Repository:
+
+```text
+https://github.com/deepthisagar7/library-management.git
+```
+
+## 2.a) Initialize, commit and push
+
+```bash
+cd library-management
+
+git init
+git status
+git add .
+git commit -m "Initial commit"
+
+git branch -M main
+
+git remote add origin https://github.com/deepthisagar7/library-management.git
+
+git push -u origin main
+```
+
+---
+
+## 2.b) Correct the commit message
+
+Since the commit has **not been pushed**:
+
+```bash
+git commit --amend -m "Added Book Management Module"
+```
+
+Verify:
+
+```bash
+git log --oneline -1
+```
+
+---
+
+## 2.c) Create and switch to branch
+
+```bash
+git switch -c feature/book-management
+```
+
+Alternative:
+
+```bash
+git checkout -b feature/book-management
+```
+
+---
+
+## 2.d) Restore deleted `Book.java`
+
+```bash
+git restore Book.java
+```
+
+---
+
+## 2.e) Resolve merge conflict
+
+Switch to feature branch:
+
+```bash
+git switch feature/book-management
+```
+
+Merge main:
+
+```bash
+git merge main
+```
+
+Identify conflicts:
+
+```bash
+git status
+```
+
+Open the conflicted file and resolve:
+
+```text
+<<<<<<< HEAD
+feature branch code
+=======
+main branch code
+>>>>>>> main
+```
+
+Keep the correct code and remove the conflict markers.
+
+Then:
+
+```bash
+git add Book.java
+git status
+git commit -m "Resolve merge conflict"
+git push origin feature/book-management
+```
+
+If multiple files are conflicted:
+
+```bash
+git add .
+```
+
+instead of `git add Book.java`.
+
+---
+
+## 2.f) Remove unwanted staged files + `.gitignore`
+
+Check staged files:
+
+```bash
+git status
+```
+
+Unstage everything without deleting:
+
+```bash
+git restore --staged .
+```
+
+Create `.gitignore` in the project root:
+
+```gitignore
+target/
+*.class
+
+.idea/
+*.iml
+
+.vscode/
+
+.classpath
+.project
+.settings/
+
+*.log
+```
+
+Then:
+
+```bash
+git add .gitignore
+git add .
+git status
+```
+
+If an unwanted file was **already tracked**:
+
+```bash
+git rm --cached filename
+```
+
+For a directory:
+
+```bash
+git rm --cached -r target/
+```
+
+---
+
+## 2.g) Incorrect latest commit
+
+### If NOT pushed:
+
+Fix the code, then:
+
+```bash
+git add .
+git commit --amend -m "Correct implementation"
+```
+
+Or remove the commit while keeping changes:
+
+```bash
+git reset --soft HEAD~1
+```
+
+### If ALREADY pushed:
+
+```bash
+git revert HEAD
+git push origin main
+```
+
+**Remember:**
+
+```text
+Not pushed     → amend / reset
+Already pushed → revert
+```
+
+---
+
+# PART I — Maven Java Application Development [40 Marks]
+
+## 1.a) Clone and import Maven project
+
+Clone:
+
+```bash
+git clone https://github.com/deepthisagar7/library-management.git
+```
+
+Enter directory:
+
+```bash
+cd library-management
+```
+
+### Eclipse
+
+```text
+File
+→ Import
+→ Maven
+→ Existing Maven Projects
+→ Select library-management folder
+→ Finish
+```
+
+### IntelliJ
+
+```text
+File
+→ Open
+→ Select library-management
+→ Open/import as Maven project
+```
+
+---
+
+# 1.b) Configure `pom.xml` for Java 17 + JAR
+
+Open:
+
+```text
+pom.xml
+```
+
+Ensure packaging is:
+
+```xml
+<packaging>jar</packaging>
+```
+
+Add/configure Java 17:
+
+```xml
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+</properties>
+```
+
+Compiler plugin:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.13.0</version>
+            <configuration>
+                <source>17</source>
+                <target>17</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+Then save `pom.xml`.
+
+**Do not delete existing dependencies/configuration from the provided project; only correct the erroneous parts.**
+
+---
+
+# 1.c) Maven lifecycle
+
+Know this order:
+
+```text
+clean
+ ↓
+compile
+ ↓
+test
+ ↓
+package
+ ↓
+install
+```
+
+### `clean`
+
+Deletes previous build output:
+
+```bash
+mvn clean
+```
+
+### `compile`
+
+Compiles Java source:
+
+```bash
+mvn compile
+```
+
+### `test`
+
+Runs tests:
+
+```bash
+mvn test
+```
+
+### `package`
+
+Packages the application into JAR:
+
+```bash
+mvn package
+```
+
+### `install`
+
+Installs the JAR into the local Maven repository:
+
+```bash
+mvn install
+```
+
+### JAR-generating phase:
+
+```text
+package
+```
+
+---
+
+# 1.d) Clean and package
+
+```bash
+mvn clean package
+```
+
+Generated JAR should appear in:
+
+```text
+target/library-management.jar
+```
+
+---
+
+# 1.e) Java 17 error troubleshooting
+
+First check installed Java:
+
+```bash
+java -version
+```
+
+Check compiler:
+
+```bash
+javac -version
+```
+
+Check Maven's Java:
+
+```bash
+mvn -version
+```
+
+Make sure Maven reports Java 17.
+
+If it reports Java 8, configure `JAVA_HOME` to point to JDK 17.
+
+### Windows example
+
+```cmd
+set JAVA_HOME=C:\Program Files\Java\jdk-17
+set PATH=%JAVA_HOME%\bin;%PATH%
+```
+
+Then verify:
+
+```bash
+java -version
+mvn -version
+```
+
+Finally:
+
+```bash
+mvn clean package
+```
+
+---
+
+# 1.f) JAR doesn't execute
+
+First try:
+
+```bash
+java -jar target/library-management.jar
+```
+
+If it fails, check these three common causes:
+
+### 1. Missing `Main-Class`
+
+Check JAR contents:
+
+```bash
+jar tf target/library-management.jar
+```
+
+Check manifest:
+
+```bash
+jar xf target/library-management.jar META-INF/MANIFEST.MF
+```
+
+Verify:
+
+```text
+Main-Class: ...
+```
+
+### 2. Wrong Java version
+
+```bash
+java -version
+```
+
+Ensure Java 17 is being used.
+
+### 3. Missing dependencies
+
+Check:
+
+```bash
+mvn dependency:tree
+```
+
+Look for errors such as:
+
+```text
+ClassNotFoundException
+NoClassDefFoundError
+```
+
+---
+
+# 1.g) Java 17 vs Java 8 machine
+
+## Step 1 — Identify mismatch
+
+On both machines:
+
+```bash
+java -version
+mvn -version
+```
+
+Machine 1:
+
+```text
+Java 17
+```
+
+Machine 2:
+
+```text
+Java 8
+```
+
+Therefore there is a JDK mismatch.
+
+## Step 2 — Require Java 17 in Maven
+
+In `pom.xml`:
+
+```xml
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+</properties>
+```
+
+A stricter approach is Maven Enforcer:
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <version>3.5.0</version>
+    <executions>
+        <execution>
+            <id>enforce-java</id>
+            <goals>
+                <goal>enforce</goal>
+            </goals>
+            <configuration>
+                <rules>
+                    <requireJavaVersion>
+                        <version>17</version>
+                    </requireJavaVersion>
+                </rules>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+```
+
+## Step 3 — Why same JDK?
+
+Use Java 17 consistently in:
+
+```text
+Development
+     ↓
+Testing
+     ↓
+Deployment
+```
+
+Different JDK versions can cause compilation, bytecode, dependency and runtime compatibility problems.
+
+---
+
+# PART III — Dockerization [20 Marks]
+
+Before Docker:
+
+```bash
+mvn clean package
+```
+
+Confirm:
+
+```text
+target/library-management.jar
+```
+
+exists.
+
+---
+
+# 3.a) Create Dockerfile
+
+In the project root create:
+
+```text
+Dockerfile
+```
+
+Put:
+
+```dockerfile
+FROM eclipse-temurin:17-jre
+
+WORKDIR /app
+
+COPY target/library-management.jar app.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "app.jar"]
+```
+
+---
+
+# 3.b) Build and run Docker container
+
+Build image:
+
+```bash
+docker build -t library-management:latest .
+```
+
+Run container in detached mode and map port 8080:
+
+```bash
+docker run -d -p 8080:8080 --name library-management-container library-management:latest
+```
+
+Access:
+
+```text
+http://localhost:8080
+```
+
+---
+
+# 3.c) Cannot access `localhost:8080`
+
+Perform these checks:
+
+### 1. Check running containers
+
+```bash
+docker ps
+```
+
+If it stopped:
+
+```bash
+docker ps -a
+```
+
+### 2. Check logs
+
+```bash
+docker logs library-management-container
+```
+
+### 3. Check port mapping
+
+```bash
+docker port library-management-container
+```
+
+Expected:
+
+```text
+8080/tcp -> 0.0.0.0:8080
+```
+
+### 4. Enter the container and verify application
+
+```bash
+docker exec -it library-management-container sh
+```
+
+Then:
+
+```bash
+ps
+```
+
+Check that the Java process is running.
+
+---
+
+# 3.d) Container running but browser gives 404
+
+A `404` generally means:
+
+> The server/application is reachable, but the requested URL doesn't exist.
+
+Check:
+
+### 1. Wrong URL
+
+The application may not have an endpoint at:
+
+```text
+/
+```
+
+It might use:
+
+```text
+/books
+```
+
+or:
+
+```text
+/api/books
+```
+
+Check the application's routes/controllers.
+
+### 2. Context path
+
+The application may require:
+
+```text
+/library
+```
+
+so the URL could be:
+
+```text
+http://localhost:8080/library
+```
+
+### 3. Verify application logs
+
+```bash
+docker logs library-management-container
+```
+
+### 4. Verify Java process inside container
+
+```bash
+docker exec -it library-management-container sh
+```
+
+Then:
+
+```bash
+ps
+```
+
+Also verify the JAR:
+
+```bash
+ls -l /app
+```
+
+and Java:
+
+```bash
+java -version
+```
+
+If necessary, rebuild everything:
+
+```bash
+mvn clean package
+docker build -t library-management:latest .
+docker stop library-management-container
+docker rm library-management-container
+docker run -d -p 8080:8080 --name library-management-container library-management:latest
+```
+
+---
+
+# 🔥 FINAL EXAM FLOW
+
+If you have to perform the entire practical from scratch, remember this overall sequence:
+
+```text
+                 PART II — GIT
+                       ↓
+                  git init
+                       ↓
+                   git add .
+                       ↓
+                    commit
+                       ↓
+                remote add origin
+                       ↓
+                   push main
+                       ↓
+              create feature branch
+                       ↓
+                merge / conflicts
+                       ↓
+                    push
+                       ↓
+                 PART I — MAVEN
+                       ↓
+                    clone
+                       ↓
+                  fix pom.xml
+                       ↓
+                  Java 17 check
+                       ↓
+               mvn clean package
+                       ↓
+             target/*.jar generated
+                       ↓
+                 PART III — DOCKER
+                       ↓
+                   Dockerfile
+                       ↓
+                docker build
+                       ↓
+                 docker run
+                       ↓
+                localhost:8080
+```
+
+### The commands most worth memorizing
+
+```bash
+# GIT
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <URL>
+git push -u origin main
+
+git commit --amend -m "message"
+git switch -c feature/book-management
+git restore Book.java
+git merge main
+git restore --staged .
+git revert HEAD
+
+# MAVEN
+java -version
+mvn -version
+mvn clean package
+
+# DOCKER
+docker build -t library-management:latest .
+docker run -d -p 8080:8080 --name library-management-container library-management:latest
+docker ps
+docker logs library-management-container
+docker exec -it library-management-container sh
+```
+
+This is the **complete Part II → Part I → Part III practical procedure** for SET-3.
