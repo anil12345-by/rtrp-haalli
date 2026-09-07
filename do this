@@ -1,0 +1,65 @@
+If you mean **how to import the cloned Library Management Maven project into Eclipse**, do this:
+
+### Import Maven Project into Eclipse
+
+1. **Open Eclipse.**
+
+2. Go to:
+   **File → Import**
+
+3. Select:
+   **Maven → Existing Maven Projects**
+
+4. Click **Next**.
+
+5. For **Root Directory**, click **Browse** and select your cloned project folder:
+
+   ```text
+   library-management
+   ```
+
+6. Eclipse should automatically detect:
+
+   ```text
+   pom.xml
+   ```
+
+7. Make sure the project is checked.
+
+8. Click **Finish**.
+
+9. Wait for Eclipse to download Maven dependencies and build the project.
+
+### Verify it
+
+In the **Project Explorer**, you should see something like:
+
+```text
+library-management
+├── src
+│   ├── main
+│   └── test
+├── pom.xml
+└── ...
+```
+
+### If you haven't cloned the project yet
+
+In Git Bash:
+
+```bash
+git clone https://github.com/deepthisagar7/library-management.git
+```
+
+Then in Eclipse:
+
+```text
+File
+ → Import
+ → Maven
+ → Existing Maven Projects
+ → Browse → library-management
+ → Finish
+```
+
+**For your exam, this is the exact import process you need to remember.**
