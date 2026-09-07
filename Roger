@@ -1,3 +1,54 @@
+also in window credentials there is not github of mine
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git version
+git version 2.52.0.windows.1
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git config --global user.name"anil12345-by"
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git config --global user.name"aniladitya11d@gmail.com"
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+        column
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git clone https://github.com/deepthisagar7/library-management.git
+Cloning into 'library-management'...
+remote: Enumerating objects: 34, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 34 (delta 2), reused 30 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (34/34), 5.43 KiB | 1.09 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (main)
+$ git init
+Initialized empty Git repository in C:/Users/fs/Desktop/library-management/.git/
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (master)
+$ git add .
+warning: adding embedded git repository: library-management
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> library-management
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached library-management
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+fs@DESKTOP-P44M87A MINGW64 ~/Desktop/library-management (master)
 i need to import files from eclipse to git it seems
 i am doing part 2 first for that i should  repository file fro eclipse to mu git and then perform operations
 i should not clone it
