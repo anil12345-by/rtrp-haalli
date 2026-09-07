@@ -119,6 +119,10 @@ Finish
 
 
 
+git config --global user.name
+git config --global user.email
+run this if it is ur email correct only?
+
 
 
 
