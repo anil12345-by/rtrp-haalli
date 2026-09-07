@@ -1,0 +1,27 @@
+Sure. Here are **all scenario-based questions from Part II and Part III in one-line exam-ready answers**.
+
+### Part II — Git & GitHub
+
+**2.b)** Since the commit is not pushed, correct the message using `git commit --amend -m "Added Book Management Module"`.
+
+**2.d)** Restore the accidentally deleted `Book.java` using `git restore Book.java`.
+
+**2.e)** Run `git status` → resolve the conflict manually → `git add .` → `git commit -m "Resolve merge conflict"` → `git push`.
+
+**2.f)** Run `git restore --staged .` to unstage files, create a `.gitignore` for `target/`, IDE files and temporary files, then `git add .gitignore` and `git add .`.
+
+**2.g)** If not pushed, use `git commit --amend` or `git reset`; if already pushed, use `git revert HEAD` and push the revert commit.
+
+### Part I — Maven
+
+**1.e)** Check `java -version` and `mvn -version`, ensure both use JDK 17, set `JAVA_HOME` to JDK 17 if necessary, then run `mvn clean package`.
+
+**1.f)** Check for a missing `Main-Class`, incorrect Java version, or missing dependencies using `jar`, `java -version`, `mvn dependency:tree`, and the JAR execution error.
+
+**1.g)** Compare `java -version` and `mvn -version`, configure Maven to require Java 17, and use the same JDK version across development and deployment to avoid compatibility issues.
+
+### Part III — Docker
+
+**3.c)** Check `docker ps`, `docker ps -a`, `docker logs <container>`, and `docker port <container>` to verify the container, application, and port mapping.
+
+**3.d)** A 404 usually means the application has no route at `/` or requires a context path; verify the correct endpoint and application status using `docker logs <container>` and `docker exec -it <container> sh`.
