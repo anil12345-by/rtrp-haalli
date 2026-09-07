@@ -7,8 +7,61 @@ yes you have to clone the github repo link into your desktop folder then open ma
 
 
 if  I open the folder and select through browse its not showing next
-ust a sec
 
+1. First check the folder structure
+
+Inside the folder they selected, it must contain pom.xml.
+
+For example:
+
+Desktop
+└── library-management
+    ├── pom.xml        ← MUST BE HERE
+    ├── src
+    └── target
+
+If pom.xml is not directly inside the selected folder, Eclipse won't recognize it as the Maven project.
+
+2. Clone correctly
+
+In CMD:
+
+cd Desktop
+git clone https://github.com/deepthisagar7/library-management.git
+
+Then:
+
+cd library-management
+dir
+
+They should see:
+
+pom.xml
+src
+3. Eclipse import
+
+In Eclipse:
+
+File
+ ↓
+Import
+ ↓
+General
+ ↓
+Existing Projects into Workspace
+ ↓
+Browse
+ ↓
+Select the library-management folder
+
+Then Eclipse should show something like:
+
+Projects:
+☑ library-management
+
+Click:
+
+Finish
 
 
 
