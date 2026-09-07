@@ -2,10 +2,7 @@ i need to import files from eclipse to git it seems
 i am doing part 2 first for that i should  repository file fro eclipse to mu git and then perform operations
 i should not clone it
 i should clone it maven ig idk
-
-
-
-
+yes you have to clone the github repo link into your desktop folder then open maven see at top file import and click on general and there click on existing projects into workspace then clikc on browse and slect your folder finsish
 
 
 
