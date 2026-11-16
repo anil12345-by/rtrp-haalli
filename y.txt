@@ -2287,4 +2287,324 @@ Reset checklist
 
 **One important practical point:** Your question paper doesn't specify the exact Docker Hub image, database credentials, application port or AWS instance configuration. Use the values supplied by your faculty or inspect the actual project before execution. In particular, the OLTRS repository's real branch, Maven packaging, Dockerfile and application startup requirements must be checked rather than assumed.
 
+
+
+
+
+
+-------------------------Q3-------------------------
+# **QUESTION 3 – Containerization and Deployment using Minikube**
+
+## **1. Verify Installations**
+
+```
+# Check Docker version
+docker --version
+
+# Check Minikube version
+minikube version
+
+# Check kubectl version
+kubectl version --client
+```
+
+## **2. Start Minikube Cluster**
+
+```
+# Start Minikube using Docker driver
+minikube start --driver=docker
+
+# Check Minikube status
+minikube status
+
+# Verify Kubernetes nodes
+kubectl get nodes
+
+# Display detailed node information
+kubectl get nodes -o wide
+```
+
+## **3. Create Deployment File**
+
+**Go to VS Code → Create a file named&#x20;**`deployment.yaml`**.**
+
+```
+# Kubernetes API version
+apiVersion: apps/v1
+
+# Resource type
+kind: Deployment
+
+# Deployment details
+metadata:
+  name: oltrs-deployment
+
+# Deployment specification
+spec:
+
+  # Initially create two replicas
+  replicas: 2
+
+  # Identify Pods using labels
+  selector:
+    matchLabels:
+      app: oltrs
+
+  # Pod configuration
+  template:
+    metadata:
+      labels:
+        app: oltrs
+
+    spec:
+      containers:
+
+        # Application container
+        - name: oltrs-container
+
+          # Docker Hub image
+          image: your-dockerhub-username/oltrs-app:latest
+
+          # Application container port
+          ports:
+            - containerPort: 8080
+```
+
+## **4. Apply Deployment**
+
+```
+# Create Deployment
+kubectl apply -f deployment.yaml
+
+# Verify Deployment
+kubectl get deployments
+
+# Verify Pods
+kubectl get pods
+
+# Display detailed Deployment information
+kubectl describe deployment oltrs-deployment
+```
+
+## **5. Create Service File**
+
+**Go to VS Code → Create a file named&#x20;**`service.yaml`**.**
+
+```
+# Kubernetes API version
+apiVersion: v1
+
+# Resource type
+kind: Service
+
+# Service details
+metadata:
+  name: oltrs-service
+
+# Service specification
+spec:
+
+  # Expose application using NodePort
+  type: NodePort
+
+  # Select Pods having this label
+  selector:
+    app: oltrs
+
+  # Port configuration
+  ports:
+
+    # Service port
+    - port: 80
+
+      # Application container port
+      targetPort: 8080
+
+      # External NodePort
+      nodePort: 30080
+
+      # Network protocol
+      protocol: TCP
+```
+
+## **6. Apply Service**
+
+```
+# Create Service
+kubectl apply -f service.yaml
+
+# Verify Services
+kubectl get services
+
+# Display detailed Service information
+kubectl describe service oltrs-service
+```
+
+## **7. Scale Deployment to Four Replicas**
+
+```
+# Scale Deployment to four replicas
+kubectl scale deployment oltrs-deployment --replicas=4
+
+# Verify replica count
+kubectl get deployments
+
+# Verify all four Pods
+kubectl get pods
+```
+
+## **8. Verify Kubernetes Nodes**
+
+```
+# Display all nodes
+kubectl get nodes
+
+# Display detailed node information
+kubectl get nodes -o wide
+```
+
+## **9. Verify Deployment Status**
+
+```
+# Display Deployments
+kubectl get deployments
+
+# Display detailed Deployment information
+kubectl describe deployment oltrs-deployment
+```
+
+## **10. Verify All Pods**
+
+```
+# Display all Pods
+kubectl get pods
+
+# Display Pod labels
+kubectl get pods --show-labels
+
+# Display detailed Pod information
+kubectl describe pods
+```
+
+## **11. Verify Service Configuration**
+
+```
+# Display Services
+kubectl get services
+
+# Display detailed Service configuration
+kubectl describe service oltrs-service
+
+# Verify Endpoints
+kubectl get endpoints oltrs-service
+
+# Verify EndpointSlices
+kubectl get endpointslices
+```
+
+## **12. Access Application**
+
+```
+# Get Minikube application URL
+minikube service oltrs-service --url
+```
+
+**Go to Chrome → Paste the generated URL → Press Enter.**
+
+## **13. Scenario-Based Questions – Kubernetes**
+
+### **1. Scale Deployment from Two to Four Replicas**
+
+```
+# Scale to four replicas
+kubectl scale deployment oltrs-deployment --replicas=4
+
+# Verify replicas
+kubectl get deployments
+
+# Verify Pods
+kubectl get pods
+```
+
+### **2. Expose Application Outside the Cluster**
+
+```
+# Create NodePort Service
+kubectl apply -f service.yaml
+
+# Verify Service
+kubectl get services
+
+# Access application
+minikube service oltrs-service --url
+```
+
+### **3. Identify Why Only Two Pods Are Running**
+
+```
+# Check Pods
+kubectl get pods
+
+# Describe Pods
+kubectl describe pods
+
+# Check events
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# Check application logs
+kubectl logs POD_NAME
+
+# Check Deployment
+kubectl describe deployment oltrs-deployment
+```
+
+### **4. Troubleshoot Service ENDPOINTS Showing None**
+
+```
+# Check Pod labels
+kubectl get pods --show-labels
+
+# Check Service
+kubectl describe service oltrs-service
+
+# Check Endpoints
+kubectl get endpoints oltrs-service
+
+# Check EndpointSlices
+kubectl get endpointslices
+```
+
+### **5. Delete Deployment and Service**
+
+```
+# Delete Deployment
+kubectl delete deployment oltrs-deployment
+
+# Delete Service
+kubectl delete service oltrs-service
+
+# Verify Deployment removal
+kubectl get deployments
+
+# Verify Service removal
+kubectl get services
+
+# Verify Pod removal
+kubectl get pods
+```
+
+## **14. Stop Minikube**
+
+```
+# Stop Minikube cluster
+minikube stop
+```
+
+## **15. Delete Minikube Cluster**
+
+```
+# Delete Minikube cluster
+minikube delete
+```
+
 You now have the complete implementation guide and all **20 scenario-based answers** for the four experiments. 🎯
