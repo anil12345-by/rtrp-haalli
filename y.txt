@@ -1,10 +1,10 @@
-
+do q3 again and send me detail 
 KESHAV MEMORIAL INSTITUTE OF TECHNOLOGY
 (AN AUTONOMOUS INSTITUTE)
-Accredited by NBA & NAAC, Approved by AICTE, Affiliated to JNTUH, Hyderabad
+
 A.Y. 2026–2027
 DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (AI & ML)
-LAB INTERNAL II 
+
 Subject Name	Software Engineering	Subject Code	23CC501PC
 Year / Semester	III / I	Branch / Section	CSM
 Question 1. Deployment using Docker Compose (25 Marks)
