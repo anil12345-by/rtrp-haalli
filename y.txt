@@ -1,1 +1,83 @@
 
+KESHAV MEMORIAL INSTITUTE OF TECHNOLOGY
+(AN AUTONOMOUS INSTITUTE)
+Accredited by NBA & NAAC, Approved by AICTE, Affiliated to JNTUH, Hyderabad
+A.Y. 2026–2027
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (AI & ML)
+LAB INTERNAL II 
+Subject Name	Software Engineering	Subject Code	23CC501PC
+Year / Semester	III / I	Branch / Section	CSM
+Question 1. Deployment using Docker Compose (25 Marks)
+Task:
+Deploy the web application along with a MySQL database using Docker Compose. ----20M
+•	Create a docker-compose.yml file defining the web application and MySQL services.
+•	Use the web application image available in the Docker Hub repository.
+•	Configure the MySQL service with the required database name, username, password, environment variables and port mapping.
+•	Start the services and verify that both containers are running and the web application is accessible.
+Expected Output:
+•	A valid docker-compose.yml file containing the web application and MySQL services.
+•	Successful startup of both services and verification of application accessibility.
+Scenario-Based Questions – Docker Compose ---------------5M
+1.	A developer wants to temporarily stop all running services without removing their containers, networks or configuration. Which Docker Compose command should be used?
+2.	After stopping the services using docker compose stop, the developer wants to start the same containers again without recreating them. Which command should be executed?
+3.	Testing is complete, and the developer wants to stop and remove the containers and the default network created by Compose. Which command should be used?
+4.	A new service has been added to docker-compose.yml. Which command should be used to apply the updated configuration and start the services?
+5.	The frontend, backend and database services are running. The developer wants to stop only the backend service while keeping the other two running. Which command should be executed?
+________________________________________
+Question 2. Jenkins Scripted Pipeline – CI/CD Automation (25 Marks)
+Task:
+Create a Groovy-based Jenkins Scripted Pipeline (Jenkinsfile) for the Online Ticket Reservation System (OLTRS) using the repository:
+https://github.com/archanareddyse/OLTRS.git  -------------------------20M
+•	Check out the source code from the specified GitHub repository.
+•	Configure a GitHub webhook to trigger the Jenkins pipeline automatically whenever code is pushed.
+•	Build and test the OLTRS application using Maven.
+•	After a successful build and test, create a Docker image and tag it appropriately.
+•	Push the image to the student's own Docker Hub repository using Jenkins credentials.
+Expected Output:
+•	A working Groovy-based Jenkinsfile that executes the required CI/CD stages.
+•	Automatic pipeline triggering through GitHub webhook. & Successful Maven build and test, followed by Docker image creation and push.
+Scenario-Based Questions -------------5M
+1.	A developer pushes a new commit to the OLTRS GitHub repository, but Jenkins does not start the pipeline. What configurations would you check to identify the issue?
+2.	The Maven build fails during the Build stage. How will you ensure that the Docker Build and Push stages are skipped?
+3.	The pipeline successfully builds the application, but the Docker Hub push fails due to authentication. How should credentials be configured and used securely in the Jenkinsfile?
+4.	The pipeline completes the Checkout and Build stages but fails during deployment. How would you identify the failed stage and inspect its error details in Jenkins?
+5.	The project team wants an email only when the pipeline fails, while successful builds should complete without an email. How would you implement this condition in the Scripted Pipeline?
+________________________________________
+Question 3. Containerization and Deployment using Minikube (25 Marks)
+Task:
+Deploy the Maven web application Docker image available in the student's own Docker Hub repository using Minikube and Kubernetes.
+•	Start a Minikube cluster and verify that it is running successfully.
+•	Create a Kubernetes Deployment to deploy the application image from Docker Hub.
+•	Create a Kubernetes Service to expose the application using NodePort. Configure the targetPort to match the application's container port and use a valid NodePort.
+•	Verify the Deployment and Service using appropriate kubectl commands.
+•	Scale the Deployment to four replicas.
+•	List and verify the Kubernetes nodes, Deployment status, replica count and Pods. Confirm that all four replicas are in the Running state.
+•	Verify the Service configuration, NodePort mapping and application accessibility through the Minikube service URL.
+Expected Output:
+•	A successfully running Minikube cluster with the application deployed.
+•	A working NodePort Service and successful access to the application through the Minikube service URL.
+Scenario-Based Questions – Kubernetes -------------5M
+1.	A web application must handle increased traffic. The existing Deployment has two replicas, and the administrator wants four. Which Kubernetes command or configuration should be used, and how will the replica count be verified?
+2.	The Pods are running, but users cannot access the application from outside the cluster. Which Kubernetes resource and configuration should be checked or created?
+3.	A Deployment is configured for four replicas, but only two Pods are in the Running state. Which commands would you use to identify the reason?
+4.	A Service has been created, but its ENDPOINTS field shows <none>. What could cause this, and how would you troubleshoot the Service selector and Pod labels?
+5.	The application is no longer required after testing. Which commands should be used to delete the Deployment and Service, and how would you verify their removal?
+________________________________________
+Question 4. Deployment in AWS Environment using Amazon EC2 (25 Marks)
+Task:
+Deploy the web application on an Amazon EC2 instance and make it accessible through its public address.
+1.	Launch an EC2 instance by selecting the specified AWS Region, operating system AMI, instance type and required configuration.
+2.	Create and configure a Security Group with appropriate inbound and outbound rules.
+3.	Clone the web application source code from the specified GitHub repository.
+4.	Deploy the web application and verify that it runs successfully.
+5.	Verify application accessibility through the EC2 Public IPv4 address or Public DNS using a web browser or AWS CLI.
+Expected Output:
+•	Successfully launched EC2 instance with the specified configuration and Security Group.
+•	Web application successfully running and accessible through the public IP address or Public DNS.
+Scenario-Based Questions – Amazon EC2
+1.	A developer cannot connect to an EC2 instance using SSH. Which instance settings, key-pair permissions and Security Group rules should be checked?
+2.	The web application runs successfully on the EC2 instance at port 8080, but users cannot access it through the public IP address. What configurations should be verified?
+3.	An EC2 instance has no Public IPv4 address, but the application must be accessed over the internet. What AWS networking or addressing configuration is required?
+4.	The application data must remain available after the EC2 instance is stopped and started. Which storage option and configuration should the developer consider?
+5.	An organization wants the application accessible through HTTP while restricting SSH access to administrators only. How should the Security Group inbound rules be configured?
+________________________________________
