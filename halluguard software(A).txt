@@ -1,0 +1,432 @@
+5. Open EC2 service
+After login:
+1. Find the search bar at the top.
+2. Search for EC2.
+3. Click EC2.
+4. You will reach the EC2 Dashboard.
+
+
+
+
+
+
+
+
+aws.amazon.com
+
+
+Click:
+Launch instance
+
+
+6. Configure your EC2 instance
+You will now see the Launch an instance page.
+
+Fill in the following settings.
+A. Name
+LibraryWebApp-Server
+
+
+B. Application and OS Images (AMI)
+Select:
+Amazon Linux 2023 AMI
+
+
+An AMI is a template used to create your virtual machine.
+
+
+
+
+
+
+
+
+dev.to
+
+
+C. Instance type
+Choose:
+t3.micro
+
+
+If your account offers a suitable Free Tier-eligible instance type, you can choose that instead.
+
+An instance type determines the computing resources such as CPU and RAM.
+D. Key pair
+Click:
+Create new key pair
+
+
+Enter:
+library-key
+
+
+Select:
+Field	Selection
+Key pair name	library-key
+Key pair type	RSA
+Private key format	.pem
+
+Click Create key pair.
+Important
+Your browser downloads:
+library-key.pem
+
+
+Keep this file safe. It is your private SSH key. Never upload it to GitHub or share it.
+E. Network settings – Security Group
+This is very important.
+
+Create a new security group.
+
+Configure inbound rules:
+Type	Port	Source
+SSH	22	My IP
+HTTP	80	0.0.0.0/0
+Custom TCP	8080	My IP initially
+
+Why?
+- Port 22: SSH connection from your computer.
+- Port 80: HTTP traffic.
+- Port 8080: Tomcat application access.
+For this learning setup, restrict port 8080 to your own IP. If you need public access for demonstration, you can temporarily allow 0.0.0.0/0, but this exposes the Tomcat port to everyone.
+
+Do not allow SSH from 0.0.0.0/0.
+
+
+
+
+
+
+
+
+medium.com
+
+
+F. Configure storage
+Choose:
+8 GiB
+
+
+Use the default supported storage type unless your lab requires something different.
+G. Launch
+Click:
+Launch instance
+
+
+Wait until the instance state becomes:
+Running
+
+
+And the status checks pass.
+EC2 instance launched
+7. Connect to EC2 using CMD (SSH)
+Now we'll connect your Windows laptop to the AWS Linux server.
+
+Go to:
+EC2 → Instances → Select LibraryWebApp-Server → Connect
+
+
+You can use the browser-based EC2 Instance Connect option, or connect through CMD as follows.
+Step 1. Locate your PEM file
+Suppose your downloaded file is in Downloads:
+C:\Users\LENOVO\Downloads\library-key.pem
+
+
+Step 2. Open CMD
+Execute:
+cd C:\Users\LENOVO\Downloads
+
+
+Step 3. Connect using SSH
+Get your instance's Public IPv4 address from the EC2 dashboard.
+
+Run:
+ssh -i "library-key.pem" ec2-user@YOUR_PUBLIC_IP
+
+
+For example, replace YOUR_PUBLIC_IP with the actual public IP shown by AWS.
+
+The username ec2-user is used for Amazon Linux 2023.
+
+If prompted:
+Are you sure you want to continue connecting?
+
+
+Type:
+yes
+
+
+You should now see a Linux terminal prompt similar to:
+[ec2-user@ip-172-31-xx-xx ~]$
+
+
+Connected to AWS EC2
+You are now controlling a remote Linux machine from your Windows laptop!
+
+AWS also supports browser-based connection through EC2 Instance Connect. 
+Amazon Elastic Compute Cloud+2
+
+8. Basic Linux commands on EC2
+Once connected, practise these commands.
+Command	Purpose
+pwd	Current directory
+ls	List files
+ls -l	Detailed file list
+mkdir project	Create directory
+cd project	Enter directory
+cd ..	Go back
+whoami	Current user
+clear	Clear terminal
+sudo	Execute with administrator privileges
+
+Try:
+whoami
+
+
+pwd
+
+
+ls
+
+
+You should get:
+ec2-user
+/home/ec2-user
+
+
+9. Install Java on EC2
+Now we install Java on the remote server.
+
+Execute:
+sudo dnf update -y
+
+
+Install Java 21:
+sudo dnf install java-21-amazon-corretto -y
+
+
+Verify:
+java -version
+
+
+Check Java compiler if you need it:
+sudo dnf install java-21-amazon-corretto-devel -y
+
+
+Then:
+javac -version
+
+
+Amazon Corretto 21 is AWS's distribution of OpenJDK and is available for Amazon Linux 2023. 
+Amazon Corretto 21+1
+
+10. Install Apache Tomcat
+We need Tomcat to run your Java web application.
+
+First create a directory:
+sudo mkdir -p /opt/tomcat
+
+
+Change directory:
+cd /opt/tomcat
+
+
+Download a compatible Tomcat release from the official Apache Tomcat downloads page:
+Apache Tomcat 10.1 downloadsFor your practical, use the latest Tomcat 10.1 binary tar.gz release if your application uses Jakarta Servlet APIs.
+
+Download the binary archive to your Windows laptop or directly to EC2. If downloading directly, use the exact .tar.gz download link from Apache:
+wget "PASTE_OFFICIAL_TOMCAT_TAR_GZ_URL_HERE" -O tomcat.tar.gz
+
+
+Extract it:
+sudo tar -xzf tomcat.tar.gz -C /opt/tomcat --strip-components=1
+
+
+Give execution permission:
+sudo chmod +x /opt/tomcat/bin/*.sh
+
+
+Start Tomcat:
+sudo /opt/tomcat/bin/startup.sh
+
+
+Check the logs:
+sudo tail -f /opt/tomcat/logs/catalina.out
+
+
+Press Ctrl+C to exit log monitoring. This does not stop Tomcat.
+
+Important: If your existing LibraryWebApp uses javax.servlet, use Tomcat 9 instead of Tomcat 10.1. The application and server versions must be compatible.
+11. Configure AWS Security Group for Tomcat
+We need to allow your browser to access Tomcat.
+
+Return to AWS Console.
+
+Go to:
+EC2 → Instances → LibraryWebApp-Server
+→ Security → Security Groups
+→ Inbound rules → Edit inbound rules
+
+
+Add:
+Type	Port	Source
+Custom TCP	8080	My IP
+
+Save the rules.
+
+For a temporary public lab demonstration, you may change the source to 0.0.0.0/0, but this makes the application accessible to everyone. Restrict it again afterward.
+
+AWS security groups act as virtual firewalls controlling inbound and outbound traffic. 
+Amazon Elastic Compute Cloud+1
+
+
+Now open:
+http://YOUR_PUBLIC_IP:8080
+
+
+You should see the Tomcat welcome page.
+Tomcat running on AWS
+12. Build your LibraryWebApp WAR file on Windows
+Now switch back to your Windows CMD.
+
+Go to your project directory:
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+
+
+Build the project:
+mvn clean package
+
+
+Expected:
+BUILD SUCCESS
+
+
+Your WAR file will be generated at:
+target\LibraryWebApp.war
+
+
+13. Transfer WAR file from Windows to AWS EC2
+This is an important practical step.
+
+We'll use the scp command to transfer the WAR file from your laptop to the EC2 server.
+
+Open a new CMD window.
+
+Execute:
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+
+
+Now execute:
+scp -i "C:\Users\LENOVO\Downloads\library-key.pem" target\LibraryWebApp.war ec2-user@YOUR_PUBLIC_IP:/home/ec2-user/
+
+
+Replace YOUR_PUBLIC_IP with your actual EC2 public IP.
+
+What does this command mean?
+Part	Meaning
+scp	Secure Copy
+-i	Specifies private key
+target\LibraryWebApp.war	Local WAR file
+ec2-user	Remote Linux username
+YOUR_PUBLIC_IP	EC2 server address
+/home/ec2-user/	Destination directory
+
+After execution, your WAR file is transferred to AWS.
+
+AWS supports SCP for transferring files to Linux EC2 instances. 
+Amazon Elastic Compute Cloud+1
+
+14. Deploy WAR file in Tomcat
+Return to your existing SSH terminal.
+
+Check whether the WAR file arrived:
+ls
+
+
+You should see:
+LibraryWebApp.war
+
+
+Copy it into Tomcat's webapps directory:
+sudo cp LibraryWebApp.war /opt/tomcat/webapps/
+
+
+Set permissions:
+sudo chmod 644 /opt/tomcat/webapps/LibraryWebApp.war
+
+
+Tomcat automatically detects and deploys WAR files placed in its webapps directory when automatic deployment is enabled.
+
+Check the deployment logs:
+sudo tail -f /opt/tomcat/logs/catalina.out
+
+
+Look for a successful deployment message.
+
+Press Ctrl+C to exit.
+15. Access your application from anywhere
+Open your browser.
+
+Enter:
+http://YOUR_PUBLIC_IP:8080/LibraryWebApp/
+
+
+For example, if your EC2 public IP were 13.200.100.50, the URL would be:
+http://13.200.100.50:8080/LibraryWebApp/
+
+
+Cloud deployment
+
+LibraryWebApp on AWS EC2
+Your actual URL will use your EC2 public IP.
+
+http://YOUR_PUBLIC_IP:8080/LibraryWebApp/
+
+If your Library Management System webpage appears, your application has been successfully deployed on AWS!
+
+16. Important AWS commands – Revision sheet
+These are the commands you should remember for your lab external.
+A. SSH connection from Windows CMD
+ssh -i "library-key.pem" ec2-user@YOUR_PUBLIC_IP
+
+
+B. Linux commands
+pwd
+ls
+ls -l
+mkdir project
+cd project
+cd ..
+whoami
+
+
+C. Java installation
+sudo dnf update -y
+sudo dnf install java-21-amazon-corretto -y
+java -version
+
+
+D. Tomcat commands
+sudo /opt/tomcat/bin/startup.sh
+sudo /opt/tomcat/bin/shutdown.sh
+
+
+E. Maven commands on Windows
+mvn clean
+mvn compile
+mvn test
+mvn package
+mvn clean package
+
+
+F. Transfer WAR file
+scp -i "library-key.pem" target\LibraryWebApp.war ec2-user@YOUR_PUBLIC_IP:/home/ec2-user/
+
+
+G. Deploy application
+sudo cp LibraryWebApp.war /opt/tomcat/webapps/
+
+
+H. Check logs
+sudo tail -f /opt/tomcat/logs/catalina.out
