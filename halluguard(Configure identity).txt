@@ -1,0 +1,38 @@
+# 1. Configure identity
+git config --global user.name "Your Name"
+git config --global user.email "your-email@gmail.com"
+create folder LibraryManagement
+cd
+# 2. Initialize repository
+git init
+
+# 3. Check status
+git status
+
+# 4. Add all files
+git add .
+git add README.md(for only one file)
+# 5. Commit files
+git commit -m "Initial commit"
+Create a new repository
+LibraryManagement
+
+# 7. Connect GitHub repository
+git remote add origin https://github.com/username/LibraryManagement.git
+
+# 6. Create main branch
+git branch -M main
+
+# 8. Verify remote
+git remote -v
+
+# 9. Push to GitHub
+git push -u origin main
+
+# 10. Verify history
+git log --oneline
+
+#11.git pull origin main,
+  
+
+
