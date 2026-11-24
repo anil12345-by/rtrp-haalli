@@ -1,0 +1,962 @@
+# **EXPERIMENT 6 – JENKINS CI/CD PIPELINE WITH EMAIL NOTIFICATION**
+
+Since you've completed the Jenkins installation, let's move directly to the practical.
+
+I'll give you the complete workflow, commands, configuration, Jenkinsfile and email notification setup.
+
+We'll use your existing **LibraryWebApp Maven project** and GitHub repository.
+
+## **1. What we are going to build**
+
+Our final workflow will be:
+
+## **Complete CI/CD workflow**
+
+**GitHub**
+
+Developer pushes Java project
+
+**Jenkins**
+
+Fetches source code
+
+**Maven**
+
+Compile → Test → Package WAR
+
+**Build Result**
+
+SUCCESS or FAILURE
+
+**Email Notification**
+
+Send build status to developer
+
+We'll configure:
+
+1. Java, Git and Maven in Jenkins.
+2. GitHub integration.
+3. Freestyle build.
+4. Pipeline using Jenkinsfile.
+5. Email notifications for success and failure.
+6. Automatic builds when code changes.
+
+# **2. Check all tools using CMD**
+
+Open Command Prompt and execute these commands one by one.
+
+**Java:**
+
+```
+java -version
+javac -version
+```
+
+**Git:**
+
+```
+git --version
+where git
+```
+
+**Maven:**
+
+```
+mvn -version
+where mvn
+```
+
+**Check Jenkins service:**
+
+```
+sc query Jenkins
+```
+
+**Open Jenkins:**
+
+```
+http://localhost:8080
+```
+
+If you configured a different port, use that port instead.
+
+### **Important**
+
+Jenkins runs as a Windows service. Even if `mvn` works in your normal CMD, Jenkins may not see the same PATH or environment variables.
+
+We'll configure the tools explicitly in Jenkins.
+
+# **3. Configure Java in Jenkins**
+
+Open:
+
+```
+Dashboard → Manage Jenkins → Tools
+```
+
+Find **JDK installations**.
+
+Click Add JDK.
+
+Enter:
+
+| Field                 | Value                              |
+| --------------------- | ---------------------------------- |
+| Name                  | JDK21                              |
+| JAVA_HOME             | Your JDK 21 installation directory |
+| Install automatically | Unchecked, if manually installed   |
+
+Example:
+
+```
+C:\Program Files\Eclipse Adoptium\jdk-21
+```
+
+Use your actual installation directory.
+
+Click Save.
+
+# **4. Configure Git in Jenkins**
+
+Go to:
+
+```
+Manage Jenkins → Tools → Git installations
+```
+
+Enter:
+
+| Field                  | Value                              |
+| ---------------------- | ---------------------------------- |
+| Name                   | Default                            |
+| Path to Git executable | `C:\Program Files\Git\bin\git.exe` |
+
+Check your actual Git path using:
+
+```
+where git
+```
+
+Use the correct executable path.
+
+Save.
+
+# **5. Configure Maven in Jenkins**
+
+Go to:
+
+```
+Manage Jenkins → Tools → Maven installations
+```
+
+Click Add Maven.
+
+Enter:
+
+| Field                 | Value   |
+| --------------------- | ------- |
+| Name                  | Maven3  |
+| Install automatically | Checked |
+
+Alternatively, configure an existing Maven installation:
+
+```
+C:\apache-maven-3.9.x
+```
+
+Use your actual Maven installation directory.
+
+Click Save.
+
+[How to Integrate Jenkins with Selenium for CI/CD Testing](https://images.openai.com/static-rsc-4/eUklkfXAwy_QuSoH5iwUu4NXnVx475Rv8zPNSrJoYpZXpyo6If5lf_e3rZv7ZUh0esSN-8wHLN1Efu4IpuAn8hRA7VYLXzKK6rZn7qM2mHNiPUjbPcKMxZey5hw3Vv8VUSwZEmVw6RWotPj57Q9vy2DqzrjCgcHgKkAgh-BZ9pQ?purpose=inline)
+
+[stadsolution.com](https://www.stadsolution.com/jenkins-and-selenium-integration?utm_source=chatgpt.com)
+
+Now Jenkins knows where to find Java, Git and Maven.
+
+# **6. Create a Jenkins Freestyle Job**
+
+Before creating the Pipeline, let's understand the basic Jenkins job.
+
+Open:
+
+```
+http://localhost:8080
+```
+
+Follow these steps:
+
+1. Click **New Item**.
+2. Enter:
+
+```
+LibraryWebApp-Build
+```
+
+3. Select **Freestyle project**.
+4. Click OK.
+
+### **Configure GitHub**
+
+Under Source Code Management:
+
+- Select Git.
+- Repository URL:
+
+```
+https://github.com/YOUR_USERNAME/LibraryWebApp.git
+```
+
+\- Branch:
+
+```
+*/main
+```
+
+For a public GitHub repository, credentials can be left as None.
+
+For a private repository, add GitHub credentials using a Personal Access Token.
+
+### **Configure the build command**
+
+Scroll to Build Steps.
+
+Select:
+
+```
+Add build step → Execute Windows batch command
+```
+
+Enter:
+
+```
+echo Starting Maven Build
+
+mvn -B clean package
+
+echo Maven Build Completed
+```
+
+Click Save.
+
+### **Execute the job**
+
+1. Open `LibraryWebApp-Build`.
+2. Click Build Now.
+3. Click the build number.
+4. Click Console Output.
+
+Expected output:
+
+```
+[INFO] BUILD SUCCESS
+Finished: SUCCESS
+```
+
+If successful, your Jenkins Freestyle job is working.
+
+# **7. Install the Email Extension Plugin**
+
+Now comes the email notification part.
+
+We want Jenkins to send an email whenever:
+
+- The build succeeds.
+- The build fails.
+
+For this, we'll use the **Email Extension Plugin**, also called `email-ext`. It provides the `emailext` Pipeline step.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://plugins.jenkins.io\&sz=32)
+
+Jenkins plugin+1
+
+
+
+### **Step 1: Install the plugin**
+
+Go to:
+
+```
+Dashboard
+→ Manage Jenkins
+→ Plugins
+→ Available plugins
+```
+
+Search:
+
+```
+Email Extension
+```
+
+Select it and click Install.
+
+Also check whether the Mailer plugin is installed.
+
+Restart Jenkins if the plugin installation requests it.
+
+### **Step 2: Configure SMTP**
+
+For this example, we'll use Gmail.
+
+Open:
+
+```
+Manage Jenkins → System
+```
+
+Find the section:
+
+**Extended E-mail Notification**
+
+Configure the following:
+
+| Setting                 | Value                   |
+| ----------------------- | ----------------------- |
+| SMTP Server             | `smtp.gmail.com`        |
+| SMTP Port               | `587`                   |
+| Use SMTP Authentication | Enabled                 |
+| Username                | Your Gmail address      |
+| Password                | Your Gmail App Password |
+| Use TLS                 | Enabled                 |
+| Use SSL                 | Disabled                |
+
+For Gmail, port 587 uses STARTTLS. Port 465 uses implicit SSL/TLS. We'll use port 587.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://developers.google.com\&sz=32)
+
+Google for Developers
+
+
+
+### **Step 3: Generate a Gmail App Password**
+
+Do not enter your normal Gmail password into Jenkins.
+
+Instead:
+
+1. Open your Google Account.
+2. Go to Security.
+3. Enable 2-Step Verification if it isn't already enabled.
+4. Search for App Passwords.
+5. Create a new app password.
+6. Name it `Jenkins`.
+7. Copy the generated password.
+
+Google account link:
+
+[Google Account Security](https://myaccount.google.com/security?utm_source=chatgpt.com)
+
+[Create App Specific Password in Gmail](https://images.openai.com/static-rsc-4/EwoR9BIkbJYyOGj69Tcsj4aRKuUfaWVCusifsyTRU4hMJdjYkaLvgPVHRcRUJU5PccNKN83Oq0K4AhWhlgwjfDq2gAEwxofDEnTwP7bFLUpNjWJhIMDii8L6uGjiOZ8T5bmc07wdaulDYZ6C8CQnFmQE-aOAQOqU7V7kM2Hu4ps?purpose=inline)
+
+[googally.com](https://www.googally.com/blog/2fa-app-specific-password?utm_source=chatgpt.com)
+
+Use this generated password in Jenkins SMTP authentication.
+
+Keep it private. Never put it in your Jenkinsfile or GitHub repository.
+
+### **Step 4: Configure sender email**
+
+In Jenkins System Configuration, find:
+
+**Jenkins Location**
+
+Set System Admin e-mail address:
+
+```
+yourgmail@gmail.com
+```
+
+Then find **Extended E-mail Notification** and set:
+
+- Default Recipients: your email address.
+- Default Subject: `Jenkins Build Notification`
+- Default Content: `Please check the Jenkins build result.`
+
+Also configure the ordinary **E-mail Notification** section with the same SMTP server, authentication and TLS settings if you intend to use the basic Mailer plugin.
+
+Click Save.
+
+### **Step 5: Test email configuration**
+
+Return to:
+
+```
+Manage Jenkins → System
+```
+
+Under Extended E-mail Notification, find:
+
+**Test configuration by sending test e-mail**
+
+Enter your recipient email address.
+
+Click Test configuration.
+
+Email configuration verified
+
+If the test email arrives, SMTP is configured correctly.
+
+If it fails, check the SMTP authentication, App Password, port and TLS settings.
+
+# **8. Create the complete Jenkins Pipeline with Email Notification**
+
+Now we'll combine everything into one practical.
+
+This is the main part to remember for your external.
+
+### **Step 1: Create Jenkinsfile**
+
+Open your Maven Web Project in Eclipse.
+
+At the same level as `pom.xml`, create a new file named:
+
+```
+Jenkinsfile
+```
+
+Your project should look like:
+
+```
+LibraryWebApp
+│
+├── src
+│   └── main
+│       └── webapp
+│           └── index.jsp
+│
+├── pom.xml
+└── Jenkinsfile
+```
+
+### **Step 2: Add this complete Jenkinsfile**
+
+Replace `YOUR_USERNAME` and the email addresses with your own details.
+
+```
+
+pipeline {
+
+    agent any
+
+    tools {
+        jdk 'JDK21'
+        maven 'Maven3'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Fetching project from GitHub'
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Compiling Maven project'
+                bat 'mvn -B clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running test cases'
+                bat 'mvn -B test'
+            }
+        }
+
+        stage('Package') {
+            steps {
+                echo 'Creating WAR file'
+                bat 'mvn -B package'
+            }
+        }
+    }
+
+    post {
+
+        success {
+            emailext(
+                to: 'YOUR_EMAIL@gmail.com',
+                subject: "SUCCESS: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                body: """
+Hello,
+
+Your Jenkins build completed successfully!
+
+Project: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+Status: SUCCESS
+
+Build URL: ${env.BUILD_URL}
+
+The Maven project was successfully built and packaged.
+
+Regards,
+Jenkins
+"""
+            )
+        }
+
+        failure {
+            emailext(
+                to: 'YOUR_EMAIL@gmail.com',
+                subject: "FAILURE: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                body: """
+Hello,
+
+Your Jenkins build has FAILED.
+
+Project: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+Status: FAILURE
+
+Please check the console output:
+${env.BUILD_URL}console
+
+Regards,
+Jenkins
+"""
+            )
+        }
+
+        always {
+            echo 'Jenkins pipeline execution completed.'
+        }
+    }
+}
+
+```
+
+### **Understand the Jenkinsfile**
+
+| Section     | Purpose                             |
+| ----------- | ----------------------------------- |
+| `pipeline`  | Defines the pipeline                |
+| `agent any` | Runs on an available agent          |
+| `tools`     | Specifies configured JDK and Maven  |
+| `stages`    | Contains build stages               |
+| `Checkout`  | Gets source code                    |
+| `Build`     | Compiles Java code                  |
+| `Test`      | Runs test cases                     |
+| `Package`   | Generates WAR                       |
+| `post`      | Executes actions after the pipeline |
+| `success`   | Sends success email                 |
+| `failure`   | Sends failure email                 |
+| `emailext`  | Sends customized email              |
+
+The `post` conditions are provided by Declarative Pipeline, and `emailext` is supplied by the Email Extension plugin.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.jenkins.io\&sz=32)
+
+Jenkins+2
+
+
+
+**Important:** The names `JDK21` and `Maven3` must exactly match the names you configured under Manage Jenkins → Tools.
+
+Also, `checkout scm` assumes you've configured the Pipeline job to retrieve its Jenkinsfile from GitHub.
+
+# **9. Push Jenkinsfile to GitHub**
+
+Jenkins needs to find the Jenkinsfile in your GitHub repository.
+
+Open CMD inside your project folder:
+
+```
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+```
+
+Check the files:
+
+```
+dir
+```
+
+You should see:
+
+```
+pom.xml
+Jenkinsfile
+src
+```
+
+Now execute:
+
+```
+git status
+```
+
+Add the Jenkinsfile:
+
+```
+git add Jenkinsfile
+```
+
+Commit:
+
+```
+git commit -m "Added Jenkins CI CD pipeline"
+```
+
+Push:
+
+```
+git push origin main
+```
+
+If you also made other project changes that should be uploaded:
+
+```
+git add .
+git commit -m "Added Jenkins pipeline"
+git push origin main
+```
+
+Now your GitHub repository contains the Jenkinsfile.
+
+# **10. Create a Jenkins Pipeline Job**
+
+Go to Jenkins Dashboard.
+
+### **Step 1**
+
+Click:
+
+```
+New Item
+```
+
+Enter:
+
+```
+LibraryWebApp-Pipeline
+```
+
+Select:
+
+```
+Pipeline
+```
+
+Click OK.
+
+### **Step 2: Configure Pipeline**
+
+Scroll to the Pipeline section.
+
+Select:
+
+```
+Definition: Pipeline script from SCM
+```
+
+Then configure:
+
+| Field            | Value                      |
+| ---------------- | -------------------------- |
+| SCM              | Git                        |
+| Repository URL   | Your GitHub repository URL |
+| Credentials      | None for public repository |
+| Branch Specifier | `*/main`                   |
+| Script Path      | `Jenkinsfile`              |
+
+Click Save.
+
+[Automating CI/CD and GitOps with Jenkins | Red Hat Developer](https://images.openai.com/static-rsc-4/lU-0yvE9HzmaecjS7O9rsdprO75XuvLP086BU9U6CsVHFEYM9ymVLTul8ce9yIQlINiGg6UwK_vcTrZo3WqIaUV_13b2KCGZcaLNvkejq3GY-m9_HzdB8rTjuG_a3OBGjFo214EZgCEvpjAsTAtXRbbWFIKR-9vMikd64hHJ-l8?purpose=inline)
+
+[developers.redhat.com](https://developers.redhat.com/articles/2022/01/13/developers-guide-cicd-and-gitops-jenkins-pipelines?utm_source=chatgpt.com)
+
+### **Step 3: Run the pipeline**
+
+Open your newly created job.
+
+Click:
+
+```
+Build Now
+```
+
+Wait for execution.
+
+Click the build number, then:
+
+```
+Console Output
+```
+
+You should see:
+
+```
+[Pipeline] stage
+[Pipeline] { (Checkout)
+
+Fetching project from GitHub
+
+[Pipeline] stage
+[Pipeline] { (Build)
+
+Compiling Maven project
+
+[Pipeline] stage
+[Pipeline] { (Test)
+
+Running test cases
+
+[Pipeline] stage
+[Pipeline] { (Package)
+
+Creating WAR file
+
+Finished: SUCCESS
+```
+
+### **Step 4: View Pipeline stages**
+
+Open your Jenkins job.
+
+You should see the stages:
+
+## **Expected Jenkins stage view**
+
+Checkout
+
+Build
+
+Test
+
+Package
+
+All stages successful
+
+# **11. Check Email Notification**
+
+After the Jenkins pipeline succeeds, open your Gmail inbox.
+
+You should receive something similar to:
+
+**Inbox**
+
+Example email
+
+**From:** Jenkins
+
+**Subject:** SUCCESS: LibraryWebApp-Pipeline - Build #1
+
+Hello,
+
+Your Jenkins build completed successfully!
+
+**Project:** LibraryWebApp-Pipeline
+
+**Build Number:** 1
+
+SUCCESS
+
+The Maven project was successfully built and packaged.
+
+Build URL: `http://localhost:8080/job/LibraryWebApp-Pipeline/1/`
+
+Regards,
+
+Jenkins
+
+If your build fails, Jenkins should send a failure email instead.
+
+**Note:** If your email does not arrive, check Spam and the Jenkins Console Output for SMTP errors.
+
+# **12. Configure automatic build triggering**
+
+So far, we've manually clicked Build Now.
+
+Let's automate it.
+
+For local laptop practice, we'll use Poll SCM.
+
+Open your Pipeline job:
+
+```
+Configure → Build Triggers
+```
+
+Select:
+
+**Poll SCM**
+
+Enter:
+
+```
+H/5 * * * *
+```
+
+Save.
+
+This makes Jenkins periodically check the GitHub repository for changes, approximately every five minutes.
+
+Alternatively, in your Jenkinsfile you can add:
+
+```
+triggers {
+    pollSCM('H/5 * * * *')
+}
+```
+
+Put it inside the `pipeline` block, outside `stages`.
+
+Now the workflow becomes:
+
+1. Modify your Java or JSP file.
+2. Commit the change.
+3. Push it to GitHub.
+4. Jenkins detects the new commit.
+5. Jenkins automatically runs the pipeline.
+6. Jenkins sends an email containing the build result.
+
+# **13. Important commands – Complete revision sheet**
+
+These are the commands you should know for your external.
+
+**A. Check software installation**
+
+```
+java -version
+javac -version
+git --version
+mvn -version
+where git
+where mvn
+sc query Jenkins
+```
+
+**B. Maven commands**
+
+```
+mvn clean
+mvn compile
+mvn test
+mvn package
+mvn clean package
+mvn verify
+```
+
+**C. Git commands**
+
+```
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote -v
+git push origin main
+git pull origin main
+```
+
+**D. Jenkins service commands (CMD as Administrator)**
+
+```
+sc query Jenkins
+net start Jenkins
+net stop Jenkins
+```
+
+Use `net start` and `net stop` only when you need to start or stop the Windows service.
+
+**E. Open Jenkins**
+
+```
+http://localhost:8080
+```
+
+&#x20;Copy all revision commands
+
+# **14. Common Jenkins errors and solutions**
+
+| Error                         | Reason                            | Solution                        |
+| ----------------------------- | --------------------------------- | ------------------------------- |
+| `mvn is not recognized`       | Maven unavailable to Jenkins      | Configure Maven under Tools     |
+| `JAVA_HOME is not defined`    | JDK not configured                | Set JDK installation            |
+| `Git not found`               | Incorrect Git path                | Configure Git executable        |
+| `Authentication failed`       | GitHub credentials issue          | Configure Personal Access Token |
+| `No such DSL method emailext` | Email Extension plugin missing    | Install email-ext               |
+| `Failed to send email`        | SMTP configuration issue          | Check App Password and TLS      |
+| `Connection refused`          | Wrong port or service not running | Check Jenkins and SMTP ports    |
+| `BUILD FAILURE`               | Compilation or test error         | Check Console Output            |
+
+# **15. Email notification in Freestyle jobs**
+
+If your examiner asks for email notification in a Freestyle project instead of Pipeline, follow these steps.
+
+1. Open your Freestyle job.
+2. Click Configure.
+3. Scroll to Post-build Actions.
+4. Click Add post-build action.
+5. Select Editable Email Notification.
+6. Enter your recipient email.
+7. Configure the triggers.
+
+Recommended settings:
+
+| Trigger       | Purpose                                    |
+| ------------- | ------------------------------------------ |
+| Success       | Email when build succeeds                  |
+| Failure - Any | Email when build fails                     |
+| Unstable      | Email when tests fail or build is unstable |
+
+Click Save and execute the job.
+
+The same SMTP configuration from Section 7 is used.
+
+# **16. Practical record – Experiment 6**
+
+Lab record ready
+
+**Experiment 6: Building CI/CD Pipeline using Jenkins**
+
+**Aim:**
+
+To build a Continuous Integration and Continuous Delivery pipeline using Jenkins by integrating GitHub and Maven and configuring email notifications.
+
+**Software Requirements:**
+
+- JDK
+- Jenkins
+- Git
+- Apache Maven
+- GitHub
+- Eclipse IDE
+
+**Procedure:**
+
+1. Install and configure Jenkins.
+2. Unlock Jenkins using the initial administrator password.
+3. Install suggested plugins.
+4. Configure JDK, Git and Maven in Jenkins.
+5. Create a Freestyle project.
+6. Connect the project to the GitHub repository.
+7. Configure Maven build commands.
+8. Execute the job and verify build output.
+9. Install the Email Extension plugin.
+10. Configure SMTP server settings.
+11. Create a Jenkinsfile containing Checkout, Build, Test and Package stages.
+12. Configure email notification using success and failure conditions.
+13. Create a Pipeline job using Pipeline script from SCM.
+14. Execute the pipeline and verify the result.
+15. Verify email notifications in the recipient's inbox.
+
+**Result:**
+
+Successfully created and executed a Jenkins CI/CD pipeline integrated with GitHub and Maven and configured email notifications for successful and failed builds.
+
+# **17. What you must remember for the external**
+
+**Five most important things**
+
+1. Jenkins is an automation server used for CI/CD.
+2. GitHub stores the source code.
+3. Maven compiles, tests and packages the project.
+4. Jenkinsfile defines the pipeline stages.
+5. Email Extension plugin sends build notifications using SMTP.
+
