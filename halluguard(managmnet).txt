@@ -1,0 +1,288 @@
+4. PRACTICAL 1 – Create a Maven Java Project in Eclipse
+This is the first practical you need to perform.
+Step 1: Open Eclipse
+1. Launch Eclipse IDE.
+2. Select your workspace.
+3. Click Launch.
+Step 2: Create a Maven project
+Go to:
+File → New → Other
+
+
+A window will open.
+
+Select:
+Maven → Maven Project
+
+
+Click Next.
+
+
+
+
+
+
+
+
+wideskills.com
+
+
+Step 3: Configure the project
+Select:
+- Create a simple project (skip archetype selection): Unchecked.
+- Use default Workspace location: Checked.
+Click Next.
+Step 4: Select an archetype
+An archetype is a template used to generate a Maven project.
+
+Search for:
+maven-archetype-quickstart
+
+
+Select the archetype and click Next.
+
+
+
+
+
+
+
+
+vogella.com
+
+
+Step 5: Enter project details
+Enter the following:
+Field	Value
+Group Id	com.library
+Artifact Id	LibraryManagement
+Version	1.0-SNAPSHOT
+Package	com.library
+
+Click Finish.
+
+
+
+
+
+
+
+
+medium.com
+
+
+Your Maven Java project is now created.
+Step 6: Understand the generated files
+You should see something like:
+LibraryManagement
+│
+├── src/main/java
+│   └── com/library/App.java
+│
+├── src/test/java
+│   └── com/library/AppTest.java
+│
+└── pom.xml
+
+
+The project may also have a generated test file.
+Step 7: Write a Java program
+Open App.java.
+
+Replace its contents with:
+package com.library;
+
+public class App {
+
+    public static void main(String[] args) {
+
+        System.out.println("Welcome to Library Management System");
+
+        System.out.println("Maven Java Project Created Successfully");
+
+    }
+}
+
+
+Save the file.
+Step 8: Run the Java program
+Right-click App.java.
+
+Select:
+Run As → Java Application
+
+
+Expected console output:
+Welcome to Library Management System
+Maven Java Project Created Successfully
+
+
+Java project created
+Your first Maven Java project is working!
+5. Understand the pom.xml file
+This is the most important file in Maven.
+
+Open pom.xml.
+
+You will see XML similar to this:
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.library</groupId>
+    <artifactId>LibraryManagement</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
+
+
+Understand these tags
+Tag	Meaning
+modelVersion	POM model version
+groupId	Organization or package identifier
+artifactId	Project name
+version	Project version
+properties	Project configuration properties
+dependencies	External libraries required
+build	Build configuration
+
+What is dependency?
+A dependency is an external library required by your project.
+
+For example, if you want to use MySQL, you can add its connector dependency inside pom.xml:
+<dependencies>
+
+    <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
+        <version>9.2.0</version>
+    </dependency>
+
+</dependencies>
+
+
+Maven downloads the dependency automatically from a repository.
+What is Maven Repository?
+A Maven repository stores project libraries and dependencies.
+
+There are three major types:
+1. Local Repository – Stored on your computer, generally inside .m2/repository.
+2. Central Repository – Public online repository maintained by Maven Central.
+3. Remote Repository – Other repository servers used by organizations or teams.
+
+
+
+
+
+
+
+
+datadisk.co.uk
+
+
+
+6. Maven build lifecycle and commands
+This is important for your practical.
+
+Maven provides a lifecycle to build and package projects.
+Important Maven commands
+Command	Purpose
+mvn validate	Validate project structure and configuration
+mvn compile	Compile source code
+mvn test	Execute tests
+mvn package	Create JAR or WAR package
+mvn verify	Run verification checks
+mvn install	Install package in local repository
+mvn clean	Remove previous build output
+
+Understand the order
+Maven build lifecycle
+1
+
+validate
+
+Check project correctness
+
+
+
+2
+
+compile
+
+Compile Java source files
+
+
+
+3
+
+test
+
+Run test cases
+
+
+
+4
+
+package
+
+Create JAR or WAR
+
+
+
+5
+
+verify
+
+Check package validity
+
+
+
+6
+
+install
+
+Save package in local repository
+
+
+
+7
+
+deploy
+
+Publish package to remote repository
+
+
+
+You don't need to execute every command individually. For example:
+mvn package
+
+
+automatically executes the earlier required phases of that lifecycle.
+How to execute Maven commands in Eclipse
+1. Right-click your Maven project.
+2. Select Run As.
+3. Select Maven build.
+4. Enter a goal such as:
+clean package
+
+
+5. Click Run.
+
+You can also open a terminal in the project directory and execute:
+mvn clean package
+
+
+After successful execution, check the target folder.
+
+You will find a JAR file for the Java project.
+
+Example:
+target/LibraryManagement-1.0-SNAPSHOT.jar
