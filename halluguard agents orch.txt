@@ -1,0 +1,234 @@
+Experiment 4 – Git and GitHub
+Run in: Windows CMD, from the project folder. Configure identity, initialize the local repository, commit files, connect the remote
+GitHub repository and push.
+A. Configure Git identity (usually once per computer)
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --list
+Use your own name and email. This configures commit identity; it does not sign you in to GitHub.
+B. Initialize and commit
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+git init
+git status
+git add .
+git status
+git commit -m "Initial commit"
+git log --oneline
+git init creates the local repository; git add . stages files; git commit saves a snapshot. Use git status to inspect changes.
+C. Connect to GitHub and push
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/LibraryWebApp.git
+git remote -v
+git push -u origin main
+Create an empty GitHub repository named LibraryWebApp first. If origin already exists, use git remote set-url origin
+https://github.com/YOUR_USERNAME/LibraryWebApp.git instead of adding it again. HTTPS authentication may require
+browser sign-in or a personal access token.
+D. Common follow-up commands
+git status
+git add .
+git commit -m "Updated LibraryWebApp"
+git push
+git pull origin main
+git clone https://github.com/YOUR_USERNAME/LibraryWebApp.git
+git branch
+git switch -c feature
+git switch main
+git merge feature
+Use pull to bring remote changes into the current branch; clone to create a local copy of an existing remote repository.
+Page 2
+SE Lab External – Commands & Execution Guide
+Experiment 5 – Maven Java and Maven Web projects
+Run in: Windows CMD from the directory containing pom.xml. In Eclipse, the same goals can be entered through Run As fi
+Maven build.
+A. Verify project and Maven
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+dir
+mvn -version
+type pom.xml
+B. Standard Maven lifecycle
+mvn validate
+mvn compile
+mvn test
+mvn package
+mvn install
+Each phase also runs the earlier required phases. package creates the artifact (JAR or WAR); install also copies it into the local
+Maven repository.
+C. Clean build and verify WAR
+mvn clean package
+dir target
+jar tf target\LibraryWebApp.war
+Expected: BUILD SUCCESS and a WAR in target. jar tf lists the archive contents; check that the web resources and WEB-INF
+are present.
+D. Useful Maven commands
+mvn clean package -DskipTests
+mvn test
+mvn dependency:tree
+mvn help:effective-pom
+Use -DskipTests only when intentionally skipping test execution. dependency:tree displays dependencies; effective-pom shows
+the combined Maven configuration.
+For a web project, pom.xml should use WAR packaging. A simple Java application commonly produces a JAR. Ensure the project
+structure and dependencies match the required project type.
+Experiment 6 – Jenkins CI/CD pipeline
+Run in: Jenkins browser UI for job creation/configuration; pipeline commands execute on the configured Jenkins agent.
+Assumes Jenkins and required plugins are already available.
+A. Freestyle job – UI execution sequence
+• Dashboard fi New Item fi enter job name fi Freestyle project fi OK.
+• Source Code Management fi Git fi enter GitHub repository URL; add credentials if private.
+• Build Triggers fi select the trigger used in your lab (for example, GitHub hook or Poll SCM).
+• Build Steps fi Invoke top-level Maven targets (if configured) fi Goals: clean package.
+• Post-build Actions fi configure email notification / Editable Email Notification if installed.
+• Save fi Build Now fi open Console Output and inspect the result.
+B. Declarative Jenkinsfile
+Save as Jenkinsfile in the repository root. Tool names must match Manage Jenkins fi Tools. This example uses a Windows
+agent:
+pipeline {
+    agent any
+    tools {
+        maven 'Maven3'
+        jdk 'JDK21'
+    }
+    stages {
+        stage('Checkout') {
+Page 3
+SE Lab External – Commands & Execution Guide
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/YOUR_USERNAME/LibraryWebApp.git'
+            }
+        }
+        stage('Build') {
+            steps { bat 'mvn clean package' }
+        }
+        stage('Test') {
+            steps { bat 'mvn test' }
+        }
+        stage('Archive WAR') {
+            steps {
+                archiveArtifacts artifacts: 'target/*.war',
+                                 fingerprint: true
+            }
+        }
+    }
+}
+For a Linux Jenkins agent, use sh 'mvn clean package' and sh 'mvn test' instead of bat.
+C. Email notification
+• Manage Jenkins fi System fi configure SMTP under E-mail Notification.
+• If using Gmail, use an app password where required; never put your email password in a Jenkinsfile.
+• For Email Extension, configure SMTP under Extended E-mail Notification and ensure the Email Extension plugin is installed.
+post {
+    success {
+        emailext(
+            to: 'RECIPIENT@example.com',
+            subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: "Build succeeded. Console: ${env.BUILD_URL}"
+        )
+    }
+    failure {
+        emailext(
+            to: 'RECIPIENT@example.com',
+            subject: "FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: "Build failed. Console: ${env.BUILD_URL}"
+        )
+    }
+}
+The emailext step requires the Email Extension plugin and working SMTP settings. For Freestyle jobs, use the configured post-build
+email action. Keep SMTP secrets out of Git.
+Experiment 7 – Docker local deployment
+Run in: Windows CMD or PowerShell from the LibraryWebApp project root. Docker Desktop must be running. The sequence
+builds an image containing the WAR and runs a Tomcat container.
+A. Login and verify Docker
+docker login
+docker version
+docker info
+docker images
+docker ps
+Sign in to Docker Hub when prompted. docker version should show Client and Server.
+B. Build the Maven WAR
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+mvn clean package
+dir target
+C. Create Dockerfile
+Create a file named Dockerfile (without .txt) in the project root:
+FROM tomcat:10.1-jdk21-temurin
+COPY target/LibraryWebApp.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+Page 4
+SE Lab External – Commands & Execution Guide
+Use a Tomcat version compatible with the application's Servlet API. Tomcat 10.1 uses jakarta.* APIs; if the project uses older
+javax.servlet APIs, use a compatible Tomcat 9 image.
+D. Build image and run container
+docker build -t librarywebapp:1.0 .
+docker images
+docker run -d --name librarywebapp -p 8081:8080 librarywebapp:1.0
+docker ps
+docker logs librarywebapp
+The -p option maps host port 8081 to container port 8080. Open http://localhost:8081/LibraryWebApp/.
+E. Container management
+docker ps -a
+docker logs -f librarywebapp
+docker stop librarywebapp
+docker start librarywebapp
+docker restart librarywebapp
+docker rm -f librarywebapp
+Ctrl+C exits log-follow mode without stopping the container. The last command force-removes the container.
+F. Optional – Docker Hub push/pull
+docker tag librarywebapp:1.0 YOUR_USERNAME/librarywebapp:1.0
+docker push YOUR_USERNAME/librarywebapp:1.0
+REM On another machine:
+docker login
+docker pull YOUR_USERNAME/librarywebapp:1.0
+docker run -d --name librarywebapp -p 8081:8080 YOUR_USERNAME/librarywebapp:1.0
+Replace YOUR_USERNAME with your Docker Hub username. The remote repository must exist or be creatable under your
+account.
+Experiment 8 – AWS EC2 cloud deployment
+Run in: Windows CMD for SSH/SCP and Maven; EC2 SSH terminal for Linux commands. Assumes the EC2 instance is already
+launched and reachable, and the private key is saved locally.
+A. Connect from Windows CMD
+ssh -i "C:\Users\LENOVO\Downloads\library-key.pem" ec2-user@YOUR_PUBLIC_IP
+Replace the key path and public IP. Amazon Linux commonly uses ec2-user. On first connection, type yes when asked to trust
+the host key.
+B. On EC2 – Java
+sudo dnf update -y
+sudo dnf install java-21-amazon-corretto -y
+java -version
+sudo dnf install java-21-amazon-corretto-devel -y
+javac -version
+C. On EC2 – Tomcat
+Download the official Tomcat binary tar.gz archive compatible with your app, then transfer/place it in the EC2 home directory.
+Replace the example archive filename below with the exact downloaded filename.
+sudo mkdir -p /opt/tomcat
+sudo tar -xzf apache-tomcat-10.1.X.tar.gz -C /opt/tomcat --strip-components=1
+sudo chmod +x /opt/tomcat/bin/*.sh
+sudo /opt/tomcat/bin/startup.sh
+sudo tail -n 50 /opt/tomcat/logs/catalina.out
+10.1.X is a version placeholder, not a literal filename. Use the exact archive name you downloaded. If using Tomcat 9, substitute its
+archive name and ensure your app is compatible.
+D. On Windows – build and transfer WAR
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+mvn clean package
+scp -i "C:\Users\LENOVO\Downloads\library-key.pem" target\LibraryWebApp.war ec2-user@YOUR_PUBLIC_IP:/home/ec2-user/
+Run SCP in a Windows CMD window, not inside the EC2 Linux terminal. It copies the WAR from your laptop to the EC2 user's
+home directory.
+Page 5
+SE Lab External – Commands & Execution Guide
+E. On EC2 – deploy and verify
+ls -l /home/ec2-user/LibraryWebApp.war
+sudo cp /home/ec2-user/LibraryWebApp.war /opt/tomcat/webapps/
+sudo chmod 644 /opt/tomcat/webapps/LibraryWebApp.war
+sudo tail -f /opt/tomcat/logs/catalina.out
+After deployment, open http://YOUR_PUBLIC_IP:8080/LibraryWebApp/. The EC2 Security Group must allow inbound
+TCP 8080 from intended client IPs. Keep SSH port 22 restricted to your own IP.
+F. Useful EC2/Linux checks and Tomcat control
+whoami
+pwd
+ls -l
+df -h
+free -h
+ps -ef | grep tomcat
+sudo ss -lntp
+sudo /opt/tomcat/bin/shutdown.sh
+sudo /opt/tomcat/bin/startup.sh
+G. Cleanup
+• Stop Tomcat if no longer needed: sudo /opt/tomcat/bin/shutdown.sh
+• Terminate the EC2 instance from the AWS Console when finished.
+• Check for separately allocated Elastic IPs, EBS volumes, snapshots and other billable resources.
