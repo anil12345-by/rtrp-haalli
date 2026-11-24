@@ -1,0 +1,236 @@
+8. Create your first Docker container using Nginx
+Before deploying your own application, let's practise with a ready-made image.
+Step 1: Download Nginx
+docker pull nginx
+
+
+Step 2: Check images
+docker images
+
+
+You should see nginx in the list.
+Step 3: Create a container
+docker run -d --name mynginx -p 8081:80 nginx
+
+
+Step 4: Check running containers
+docker ps
+
+
+Step 5: Open browser
+http://localhost:8081
+
+
+You should see:
+
+
+
+
+
+
+
+
+noob2poweruser.com
+
+
+Step 6: Stop container
+docker stop mynginx
+
+
+Step 7: Start it again
+docker start mynginx
+
+
+Step 8: Remove it
+First stop it:
+docker stop mynginx
+
+
+Then remove it:
+docker rm mynginx
+
+
+This completes your first Docker container practical.
+9. Deploy your LibraryWebApp using Docker
+Main lab practical
+Now let's do the actual experiment from your syllabus.
+
+We will take your existing Maven-generated WAR file and deploy it inside a Tomcat Docker container.
+Understand what we are doing
+Your project is already built using Maven.
+
+You have this file:
+LibraryWebApp/target/LibraryWebApp.war
+
+
+Instead of installing and configuring Tomcat manually, Docker will download a Tomcat image and run your application inside it.
+Deployment architecture
+LibraryWebApp
+
+Maven-generated WAR file
+
+
+Dockerfile
+
+Instructions for building image
+
+
+Docker Image
+
+Tomcat + LibraryWebApp
+
+
+Docker Container
+
+Running application
+
+
+Browser
+localhost:8081
+
+
+Step 1. Open your LibraryWebApp project
+Open CMD.
+
+Execute:
+cd C:\Users\LENOVO\eclipse-workspace\LibraryWebApp
+
+
+Check your files:
+dir
+
+
+Step 2. Generate the WAR file
+Execute:
+mvn clean package
+
+
+Wait for:
+BUILD SUCCESS
+
+
+Check that the WAR contains your webpage:
+jar tf target\LibraryWebApp.war
+
+
+Look for index.jsp in the output. If it isn't present, check your Maven webapp structure before proceeding.
+Step 3. Create a Dockerfile
+This is the most important step.
+
+Inside your LibraryWebApp root folder, create a new file named:
+Dockerfile
+
+
+Make sure it has no .txt extension.
+
+Your folder should look like:
+LibraryWebApp
+│
+├── src
+│   └── main
+│       └── webapp
+│           ├── WEB-INF
+│           └── index.jsp
+│
+├── target
+│   └── LibraryWebApp.war
+│
+├── pom.xml
+└── Dockerfile
+
+
+Step 4. Write Dockerfile instructions
+Open Dockerfile and paste:
+
+FROM tomcat:10.1-jdk21-temurin
+
+COPY target/LibraryWebApp.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+
+
+
+Explanation of every instruction
+Instruction	Meaning
+FROM	Specifies the base image
+tomcat:10.1-jdk21-temurin	Tomcat server with Java 21
+COPY	Copies the WAR file into Tomcat
+EXPOSE	Documents the container's listening port
+
+The WAR file is copied into Tomcat's webapps folder. Tomcat automatically deploys it when the container starts.
+
+Dockerfile instructions are processed when building the image. 
+Docker Docs
+
+
+Compatibility note: Tomcat 10.1 uses Jakarta EE APIs. If your application uses older javax.servlet APIs, use a compatible Tomcat 9 image instead, such as tomcat:9.0-jdk21-temurin.
+Step 5. Build Docker Image
+Open CMD in the project root.
+
+Execute:
+docker build -t librarywebapp:1.0 .
+
+
+Understand the command:
+- docker build – Builds an image.
+- -t – Assigns a name and tag.
+- librarywebapp – Image name.
+- 1.0 – Image version.
+- . – Current directory is the build context.
+Docker will:
+1. Read your Dockerfile.
+2. Download the Tomcat base image if necessary.
+3. Copy the WAR file.
+4. Create your application image.
+Wait until the build completes.
+Step 6. Check Docker Image
+Execute:
+docker images
+
+
+You should see something similar:
+Repository	Tag
+librarywebapp	1.0
+tomcat	10.1-jdk21-temurin
+
+Docker image created
+Step 7. Run Docker Container
+Now execute:
+docker run -d --name librarywebapp -p 8081:8080 librarywebapp:1.0
+
+
+This is the most important deployment command.
+
+Explanation:
+- docker run – Creates and starts a container.
+- -d – Runs in background.
+- --name librarywebapp – Names the container.
+- -p 8081:8080 – Maps host port 8081 to container port 8080.
+- librarywebapp:1.0 – Uses the image we created.
+We use 8081 on your laptop so that it doesn't conflict with your local Tomcat on port 8080.
+Step 8. Verify the Container
+Execute:
+docker ps
+
+
+You should see your running container.
+
+Example:
+CONTAINER ID    IMAGE              STATUS
+abc123          librarywebapp:1.0  Up
+
+
+To check the deployment logs:
+docker logs librarywebapp
+
+
+Look for Tomcat startup and deployment messages.
+Step 9. Open your application
+Open Chrome.
+
+Enter:
+Your deployed application
+
+http://localhost:8081/LibraryWebApp/
+Open LibraryWebApp 
+If your webpage appears, congratulations!
