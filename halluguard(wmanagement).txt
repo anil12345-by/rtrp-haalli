@@ -1,0 +1,334 @@
+7. PRACTICAL 2 – Create a Maven Web Project in Eclipse
+Now comes the second practical.
+
+What is a Maven Web Project?
+
+A Maven Web Project is a Java web application managed using Maven.
+
+It can contain:
+- HTML pages.
+- CSS files.
+- JavaScript.
+- JSP pages.
+- Java Servlets.
+- Java classes.
+It is generally packaged into a .war file.
+What is WAR?
+WAR stands for Web Application Archive.
+
+It is a packaged file containing the components of a Java web application, which can be deployed to a servlet container such as Apache Tomcat.
+Difference between Maven Java and Maven Web projects
+Maven Java Project	Maven Web Project
+Used for standalone Java applications	Used for web applications
+Usually packaging jar	Usually packaging war
+Main method often starts execution	Runs on a web server/container
+Uses src/main/java	Also uses src/main/webapp
+Output is JAR	Output is WAR
+
+Step 1: Create a new Maven project
+Open Eclipse.
+
+Go to:
+File → New → Other → Maven → Maven Project
+
+
+Click Next.
+Step 2: Select archetype
+Search for:
+maven-archetype-webapp
+
+
+Select the webapp archetype.
+
+Click Next.
+
+
+
+
+
+
+
+
+jfinal.com
+
+
+Step 3: Enter project information
+Enter:
+Field	Value
+Group Id	com.library
+Artifact Id	LibraryWebApp
+Version	1.0-SNAPSHOT
+Package	com.library
+
+Click Finish.
+
+Your Maven Web Project is created.
+Step 4: Understand the directory structure
+Your project should look approximately like this:
+LibraryWebApp
+
+pom.xml
+
+src
+
+main
+
+java
+
+webapp
+
+index.jsp
+
+WEB-INF
+
+
+
+
+target
+
+
+
+Important folders:
+- src/main/java – Java source files.
+- src/main/webapp – Web resources.
+- WEB-INF – Web application configuration and protected resources.
+- index.jsp – Main JSP page.
+- target – Generated WAR file after packaging.
+Step 5: Write your first JSP page
+Open:
+src/main/webapp/index.jsp
+
+
+Replace its content with:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body>
+
+    <h1>Welcome to Library Management System</h1>
+
+    <h2>Maven Web Project</h2>
+
+    <p>Project created successfully using Eclipse and Maven.</p>
+
+</body>
+</html>
+
+
+Save the file.
+Step 6: Understand JSP
+JSP stands for JavaServer Pages.
+
+It is a server-side technology used to create dynamic web pages using Java.
+
+For example, you can display dynamic information using JSP expressions and scriptlets.
+
+A simple JSP expression:
+<h2>Current Date: <%= new java.util.Date() %></h2>
+
+
+When the server processes the page, it displays the current date.
+Step 7: Configure the pom.xml for a Web Project
+Open pom.xml.
+
+Make sure its packaging is war.
+
+Example:
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.library</groupId>
+    <artifactId>LibraryWebApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>war</packaging>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
+
+
+Remember this difference:
+
+Java project:
+<packaging>jar</packaging>
+
+
+Web project:
+<packaging>war</packaging>
+
+
+If packaging is omitted, Maven defaults to JAR.
+8. Build the Maven Web Project
+Now we need to generate the WAR file.
+Method 1: Using Eclipse
+1. Right-click LibraryWebApp.
+2. Select Run As.
+3. Select Maven build.
+4. Enter:
+clean package
+
+
+5. Click Run.
+Method 2: Using terminal
+Open terminal inside your project folder:
+mvn clean package
+
+
+After successful build, open:
+LibraryWebApp/target/
+
+
+You should see:
+LibraryWebApp-1.0-SNAPSHOT.war
+
+
+WAR generated successfully
+9. Deploy Maven Web Project using Apache Tomcat
+To view your web application in a browser, we need a server.
+
+We'll use Apache Tomcat.
+
+
+
+
+
+
+
+
+jvmhost.com
+
+
+What is Tomcat?
+Apache Tomcat is a web server and servlet container used to run Java web applications.
+Step 1: Download Tomcat
+Visit:
+
+Apache Tomcat official website.
+
+Download a compatible version, such as Tomcat 10.1.
+Step 2: Configure Tomcat in Eclipse
+For Eclipse with Enterprise Java/Web Tools:
+1. Open Eclipse.
+2. Go to Window → Show View → Servers.
+3. Click the link to create a new server.
+4. Select Apache → Tomcat.
+5. Select the installed Tomcat version.
+6. Browse to your Tomcat installation directory.
+7. Select the JDK.
+8. Click Finish.
+
+
+
+
+
+
+
+
+medium.com
+
+
+Step 3: Add the web project to Tomcat
+1. Right-click the Tomcat server in the Servers tab.
+2. Select Add and Remove.
+3. Select LibraryWebApp.
+4. Click Add.
+5. Click Finish.
+Step 4: Start the server
+Right-click Tomcat.
+
+Select:
+Start
+
+
+Or right-click the project and select:
+Run As → Run on Server
+
+
+Step 5: Open the browser
+Visit:
+http://localhost:8080/LibraryWebApp/
+
+
+You should see:
+Library Management System
+
+Example output
+
+
+Welcome to Library Management System
+Maven Web Project
+
+Project created successfully using Eclipse and Maven.
+
+Note: Eclipse's Run on Server feature requires the appropriate Web Tools/Enterprise Java support. If your Eclipse installation doesn't show Tomcat under Servers, install the Web Tools Platform (WTP), or deploy the generated WAR through Tomcat's webapps directory.
+
+For manual deployment:
+1. Copy the WAR file from target.
+2. Paste it into Tomcat's webapps directory.
+3. Start Tomcat.
+4. Open http://localhost:8080/LibraryWebApp/.
+
+10. Push Maven Java and Maven Web Projects to GitHub
+This is the last part of your experiment.
+
+You already know Git, so we will apply those commands to both projects.
+Step 1: Open terminal in the Maven project folder
+For example:
+cd LibraryManagement
+
+
+Step 2: Create .gitignore
+Create a .gitignore file:
+target/
+.classpath
+.project
+.settings/
+*.class
+
+
+This prevents generated build output and certain Eclipse-specific files from being uploaded.
+Step 3: Initialize Git
+git init
+
+
+Step 4: Configure identity if not already configured
+git config --global user.name "Your Name"
+
+
+git config --global user.email "your-email@gmail.com"
+
+
+Step 5: Add and commit files
+git add .
+
+
+git commit -m "Created Maven Java project"
+
+
+Step 6: Create a GitHub repository
+Create a repository named:
+LibraryManagement
+
+
+Step 7: Connect remote repository
+git remote add origin https://github.com/username/LibraryManagement.git
+
+
+Step 8: Push the project
+git branch -M main
+
+
+git push -u origin main
+
+
+Repeat the same procedure for the Maven Web Project, using its own repository and folder.
